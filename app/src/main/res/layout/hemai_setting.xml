@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/yellow_slide" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/yellow_slide" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/cp11ydj_tittle_bar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <ImageButton android:id="@id/cp11ydj_lotteryhall_act_btn_back" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <ImageView android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" android:src="@drawable/lin2" android:layout_toRightOf="@id/cp11ydj_lotteryhall_act_btn_back" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linear_show_popwindow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/cp11ydj_lotteryhall_act_btn_back" android:layout_centerVertical="true">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/cst_color_white" android:id="@id/check_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="前一" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:src="@drawable/ico_jtx" />
+                    </LinearLayout>
+                    <TextView android:textSize="18.0dip" android:textColor="@color/cst_color_white" android:id="@id/cp_type_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编辑合买信息" android:layout_centerInParent="true" />
+                    <ImageButton android:id="@id/cp11ydj_lotteryhall_act_btn_refresh" android:background="@drawable/btn_lotterychoose_menu_style" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cst_btn_menu" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/linearLayout02" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v4.view.ViewPager android:id="@id/slideMenu" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="37.0dip" />
+                <RelativeLayout android:orientation="horizontal" android:id="@id/linearLayout03" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/ivPreviousButton" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/previous_button" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:id="@id/linearLayout05" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/ivNextButton" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/next_button" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/ivMenuBackground" android:paddingTop="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/gcjl_menubg_img" android:layout_centerVertical="true" android:contentDescription="@drawable/icon" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cp_tv_code_list_title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="37.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_black" android:gravity="center" android:id="@id/cp_tv_issure_time_code_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="距--期    截止 : " />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/red" android:gravity="center" android:id="@id/cp_tv_issure_time_code_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+                </LinearLayout>
+                <ImageView android:gravity="right" android:id="@id/cp_lottery_code_view_down" android:background="@drawable/array" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+                <ImageView android:gravity="right" android:id="@id/cp_lottery_code_view_up" android:background="@drawable/array_up" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+                <ProgressBar android:id="@id/progress_act_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleSmall" />
+            </LinearLayout>
+            <View android:background="@color/cst_color_gray" android:layout_width="fill_parent" android:layout_height="2.0px" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cp_tv_code_list" android:background="@color/cst_color_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_red" android:gravity="center" android:id="@id/cp_tv_code_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="201205期  07 08 09 10 11 12" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_red" android:gravity="center" android:id="@id/cp_tv_code_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="201205期  07 08 09 10 11 12" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_red" android:gravity="center" android:id="@id/cp_tv_code_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="201205期  07 08 09 10 11 12" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_red" android:gravity="center" android:id="@id/cp_tv_code_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="201205期  07 08 09 10 11 12" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_red" android:gravity="center" android:id="@id/cp_tv_code_five" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="201205期  07 08 09 10 11 12" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/user_gold_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="方案标题:" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/touming2" android:id="@id/tv_fangantitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="3.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/user_gold_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="方案金额:" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/touming2" android:id="@id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="3.0dip" android:text="2元" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/user_gold_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="3.0dip" android:text="份数:" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/touming2" android:id="@id/tv_fen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="3.0dip" android:text="2份" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/user_gold_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="每份金额:" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/touming2" android:id="@id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="3.0dip" android:text="1元" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/user_gold_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="购买份数:" />
+            <EditText android:textSize="14.0dip" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/et_hemaifenshu" android:background="@drawable/bg_edittext" android:paddingLeft="3.0dip" android:layout_width="130.0dip" android:layout_height="30.0dip" android:layout_marginLeft="6.0dip" android:layout_marginBottom="0.0dip" android:hint="至少购买一份" android:maxLength="6" android:inputType="number" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/user_gold_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="    最低认购(10%)" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/user_gold_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="跟单最低金额:" />
+            <EditText android:textSize="14.0dip" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/et_zuidijine" android:background="@drawable/bg_edittext" android:paddingLeft="3.0dip" android:layout_width="130.0dip" android:layout_height="30.0dip" android:layout_marginLeft="6.0dip" android:layout_marginBottom="0.0dip" android:text="1" android:hint="至少购买一份" android:maxLength="6" android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/user_gold_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="保底份数:" />
+            <EditText android:textSize="14.0dip" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/et_hemaibaodi" android:background="@drawable/bg_edittext" android:paddingLeft="3.0dip" android:layout_width="130.0dip" android:layout_height="30.0dip" android:layout_marginLeft="6.0dip" android:layout_marginBottom="0.0dip" android:hint="可以不保底" android:maxLength="6" android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/user_gold_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="保密设置:" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/radioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+                <RadioButton android:textSize="13.0sp" android:textColor="@drawable/balltext_jc_color_style_2" android:gravity="center" android:id="@id/raido_open" android:background="@drawable/jc_checkbox_selected" android:layout_width="65.0dip" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="公开" />
+                <RadioButton android:textSize="13.0sp" android:textColor="@drawable/balltext_jc_color_style_2" android:gravity="center" android:id="@id/radio_close" android:background="@drawable/jc_checkbox_selected" android:layout_width="65.0dip" android:layout_height="wrap_content" android:button="@null" android:text="保密" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/chooseact_linear_bottom" android:background="@drawable/bottom_background" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentBottom="true">
+        <CheckBox android:id="@id/my_check_end" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="true" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0sp" android:textColor="@color/yilou_dark_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应支付金额:" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/red" android:layout_gravity="center" android:id="@id/tv_need_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/yilou_dark_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ffff7301" android:layout_gravity="center" android:id="@id/cpchooselistact_tv_betNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="5" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffff7301" android:layout_gravity="center" android:id="@id/tv_beishu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="1" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="倍" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffff7301" android:layout_gravity="center" android:id="@id/tv_qishu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="1" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="期" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/cpchooselistact_btn_submit" android:background="@drawable/cst_gcjl_mid_style_2" android:layout_width="80.0dip" android:layout_height="35.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="50.0dip" android:text="提交订单" />
+    </LinearLayout>
+</RelativeLayout>

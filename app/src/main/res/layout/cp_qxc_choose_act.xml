@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/cpqxc_tittle_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/share_toolbarbg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageButton android:id="@id/cpqxc_lotteryhall_act_btn_back" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/cst_btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/cst_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cp_qxc" android:layout_centerInParent="true" />
+            <ImageButton android:id="@id/cpqxc_lotteryhall_act_btn_refresh" android:background="@drawable/btn_lotterychoose_menu_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/cst_btn_menu" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/cpqxcchooseact_linear_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/cpqxcchooseact_btn_clean" android:background="@drawable/cst_gcjl_mid_style" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="清除号码" android:layout_weight="1.0" />
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/cpqxcchooseact_btn_random" android:background="@drawable/cst_gcjl_mid_style" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="机选选号" android:layout_weight="1.0" />
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/cpqxcchooseact_btn_submit" android:background="@drawable/cst_gcjl_mid_style" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="确认选好" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:id="@id/cpqxcchooseact_linear_bottomUp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/cpqxcchooseact_linear_bottom">
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_choose_main" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/text_choose_money" android:gravity="center" android:id="@id/cpqxcchooseact_tv_betNum" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_choose_main" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注," />
+        <TextView android:textSize="16.0dip" android:textColor="@color/text_choose_money" android:gravity="center" android:id="@id/cpqxcchooseact_tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_choose_main" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+    </LinearLayout>
+    <ScrollView android:id="@id/cpqxcchooseact_scroll_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/cpqxcchooseact_linear_bottomUp" android:layout_below="@id/cpqxc_tittle_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="1800.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/cst_gsensor_trip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="vertical" android:paddingTop="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/cpqxcchooseact_Linear_ballFirstwei" android:background="@drawable/choose_ball_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <RelativeLayout android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/text_choose_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第一位(至少选择一个球)" />
+                    </LinearLayout>
+                    <Button android:textSize="13.0dip" android:textColor="#ffefd8d8" android:gravity="center" android:id="@id/cpqxcchooseact_btn_redRandom" android:background="@drawable/btn_lotterychoose_pagerandom_red_style" android:layout_width="70.0dip" android:layout_height="25.0dip" android:layout_marginRight="12.0dip" android:text="@string/jixuan" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="vertical" android:paddingTop="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/cpqxcchooseact_Linear_ballSecondwei" android:background="@drawable/choose_ball_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <RelativeLayout android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/text_choose_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第二位(至少选择一个球)" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="vertical" android:paddingTop="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/cpqxcchooseact_Linear_ballThreewei" android:background="@drawable/choose_ball_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <RelativeLayout android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/text_choose_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第三位(至少选择一个球)" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="vertical" android:paddingTop="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/cpqxcchooseact_Linear_ballFourwei" android:background="@drawable/choose_ball_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <RelativeLayout android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/text_choose_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第四位(至少选择一个球)" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="vertical" android:paddingTop="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/cpqxcchooseact_Linear_ballFivewei" android:background="@drawable/choose_ball_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <RelativeLayout android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/text_choose_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第五位(至少选择一个球)" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="vertical" android:paddingTop="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/cpqxcchooseact_Linear_ballSixwei" android:background="@drawable/choose_ball_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <RelativeLayout android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/text_choose_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第六位(至少选择一个球)" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="vertical" android:paddingTop="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/cpqxcchooseact_Linear_ballSeventhwei" android:background="@drawable/choose_ball_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <RelativeLayout android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/text_choose_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第七位(至少选择一个球)" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

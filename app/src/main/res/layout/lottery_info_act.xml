@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageView android:layout_gravity="center" android:background="@drawable/my_lottery_top_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="19.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lottery_info" android:layout_centerInParent="true" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageButton android:id="@id/lotteryinfoact_btn_refresh" android:background="@drawable/btn_lotterychoose_update_style" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="31.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/cst_btn_update" android:layout_alignParentRight="true" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/lotteryinfoact_pbr_refresh" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ui.main.newversion.viewpager.RiseNumberTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/kaijiang_red" android:gravity="center" android:id="@id/risenumber_textview1" android:background="@drawable/back_num_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/kaijiang_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="亿" />
+                <com.ui.main.newversion.viewpager.RiseNumberTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/kaijiang_red" android:gravity="center" android:id="@id/risenumber_textview2" android:background="@drawable/back_num_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="2" />
+                <com.ui.main.newversion.viewpager.RiseNumberTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/kaijiang_red" android:gravity="center" android:id="@id/risenumber_textview3" android:background="@drawable/back_num_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="9" />
+                <com.ui.main.newversion.viewpager.RiseNumberTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/kaijiang_red" android:gravity="center" android:id="@id/risenumber_textview4" android:background="@drawable/back_num_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="8" />
+                <com.ui.main.newversion.viewpager.RiseNumberTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/kaijiang_red" android:gravity="center" android:id="@id/risenumber_textview5" android:background="@drawable/back_num_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="6" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/kaijiang_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="万" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="彩票累计中奖金额" />
+            </LinearLayout>
+            <View android:background="@color/color_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_cp11ydj" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_cp11ydj" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/award_logo_11x5" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="十一运夺金" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_cp11ydj_lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_cp11ydj_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="------" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip" android:layout_weight="1.0">
+                            <TextView android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_cp11ydj_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_cp11ydj_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_cp11ydj_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_jx11x5" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_jx11x5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/award_logo_jx11x5" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="江西11选5" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_jx11x5__lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_jx11x5_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="------" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_jx11x5_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_jx11x5" android:layout_centerVertical="true" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip" android:layout_weight="1.0">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_jx11x5_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_jx11x5_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                            <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_jx11x5_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_gd11x5" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_gd11x5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/award_logo_gd11x5" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="广东11选5" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_gd11x5__lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_gd11x5_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="------" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_gd11x5_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_gd11x5" android:layout_centerVertical="true" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip" android:layout_weight="1.0">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_gd11x5_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_gd11x5_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                            <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_gd11x5_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_js11x5" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_js11x5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/award_logo_gd11x5" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="江苏11选5" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_js11x5__lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_js11x5_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="------" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_js11x5_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_js11x5" android:layout_centerVertical="true" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_js11x5_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_js11x5_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                                <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_js11x5_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_cqssc" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_cqssc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/logo_kj_jxssc" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="重庆时时彩" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_cqssc_lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_cqssc_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="------" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="@color/cst_lottery_name" android:id="@id/miaoshu1" android:paddingTop="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_cqssc_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_cqssc" android:layout_centerVertical="true" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip" android:layout_weight="1.0">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_cqssc_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_cqssc_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                            <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_cqssc_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_jxssc" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_jxssc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/logo_kj_jxssc" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_jxssc_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_jxssc" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="江西时时彩" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_tv_jxssc__lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_jxssc_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="------" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="@color/cst_lottery_name" android:id="@id/miaoshu2" android:paddingTop="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_jxssc_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_jxssc_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_jxssc_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_hnwfc" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_hnwfc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/logo_kj_jxssc" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="河内五分彩" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_hnwfc_lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_hnwfc_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="------" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="@color/cst_lottery_name" android:id="@id/miaoshu5" android:paddingTop="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_cqssc_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_hnwfc" android:layout_centerVertical="true" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip" android:layout_weight="1.0">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_hnwfc_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_hnwfc_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                            <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_hnwfc_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_xysfc" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_xysfc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/logo_jxssc" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="印尼五分彩" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_xysfc_lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_xysfc_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="------" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="@color/cst_lottery_name" android:id="@id/miaoshu6" android:paddingTop="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_cqssc_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_xysfc" android:layout_centerVertical="true" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip" android:layout_weight="1.0">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_xysfc_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_xysfc_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                            <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_xysfc_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_jsk3" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_jsk3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/logo_kj_jsk3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_jsk3_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_jsk3" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="江苏快三" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_tv_jsk3__lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_jsk3_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="------" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="@color/cst_lottery_name" android:id="@id/miaoshu3" android:paddingTop="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_jsk3_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_jsk3_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_jsk3_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_jlk3" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_jlk3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/logo_kj_jsk3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_jlk3_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_jlk3" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="吉林快三" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_tv_jlk3__lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_jlk3_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="------" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="@color/cst_lottery_name" android:id="@id/miaoshu4" android:paddingTop="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_jlk3_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_jlk3_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_jkl3_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_shuangseqiu" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_ssq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/award_logo_ssq" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_ssq_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_ssq" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="双色球" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_tv_ssq__lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_ssq_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="------" android:layout_weight="1.0" />
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_blue" android:gravity="center" android:id="@id/lotteryinfoact_tv_ssq_lotteryNumBlue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="-" android:layout_weight="6.0" android:layout_alignParentRight="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_ssq_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:layout_gravity="right" android:id="@id/lotteryinfoact_tv_ssq_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="官方已停售" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_ssq_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_fc3d" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_fc3d" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/award_logo_fc3d" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_fc3d_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_fc3d" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="福彩3D" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_tv_fc3d__lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_fc3d_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="---" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_fc3d_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_fc3d_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_fc3d_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_daletou" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_dlt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/award_logo_dlt" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_dlt_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_dlt" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="大乐透" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_dlt_lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_dlt_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="-----" android:layout_weight="1.0" />
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_blue" android:gravity="center" android:id="@id/lotteryinfoact_tv_dlt_lotteryNumBlue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="--" android:layout_weight="6.0" android:layout_alignParentRight="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_dlt_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:gravity="right" android:id="@id/lotteryinfoact_tv_dlt_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="官方已停售" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_dlt_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="5.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_qlc" android:background="@drawable/hemai_back_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_qlc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/award_logo_qlc" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_qlc_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_qlc" android:layout_centerVertical="true" />
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true">
+                            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/cst_color_black" android:id="@id/lotteryinfoact_tv_qlc_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/cst_color_black" android:id="@id/lotteryinfoact_tv_qlc_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                                <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/cst_color_black" android:id="@id/lotteryinfoact_tv_qlc_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_qlc_lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_qlc_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="-------" android:layout_weight="1.0" />
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_blue" android:gravity="center" android:id="@id/lotteryinfoact_tv_qlc_lotteryNumBlue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="--" android:layout_weight="6.0" android:layout_alignParentRight="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:background="@drawable/kjxx_bg_204x73" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_pl5" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_pl5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/award_logo_pl5" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_pl5_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_pl5" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="排列五" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_pl5_lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_pl5_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="-----" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_pl5_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:gravity="right" android:id="@id/lotteryinfoact_tv_pl5_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_pl5_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="5.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_qxc" android:background="@drawable/hemai_back_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_qxc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/award_logo_qxc" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_qxc_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_qxc" android:layout_centerVertical="true" />
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true">
+                            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/cst_color_black" android:id="@id/lotteryinfoact_tv_qxc_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/cst_color_black" android:id="@id/lotteryinfoact_tv_qxc_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                                <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/cst_color_black" android:id="@id/lotteryinfoact_tv_qxc_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_qxc_lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_qxc_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="-------" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:background="@drawable/kjxx_bg_204x73" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_pl3" android:background="@drawable/btn_shouye_left_back_style" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_pl3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/award_logo_pl3" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_pl3_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_pl3" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="19.0sp" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="排列三" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_pl3_lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_pl3_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="---" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="13.0dip">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_pl3_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_pl3_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/kaijiang_issues" android:id="@id/lotteryinfoact_tv_pl3_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/kj_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="5.0dip">
+                <LinearLayout android:id="@id/lottery_info_act_linear_22x5" android:background="@drawable/hemai_back_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/lotteryinfoact_iv_22x5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/award_logo_22x5" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/cst_text_22x5_66x65" android:layout_toRightOf="@id/lotteryinfoact_iv_22x5" android:layout_centerVertical="true" />
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true">
+                            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/cst_color_black" android:id="@id/lotteryinfoact_tv_22x5_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/cst_color_black" android:id="@id/lotteryinfoact_tv_22x5_lotteryIssue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." />
+                                <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/cst_color_black" android:id="@id/lotteryinfoact_tv_22x5_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryinfoact_tv_22x5_lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/kjxx_red" android:gravity="center_vertical" android:id="@id/lotteryinfoact_tv_22x5_lotteryNumRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="-----" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:background="@drawable/kjxx_bg_204x73" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

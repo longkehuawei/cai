@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/my_lottery_cg_record_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_caizhong" android:background="@drawable/new_logo_sd11x5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/itemHeaderLinearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_cg_record_cp_type_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="双色球?" android:singleLine="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_cg_record_qihao_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="59.0dip" android:text="第2012004期" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff656565" android:id="@id/my_lottery_cg_record_spendMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="认购金额：" android:singleLine="true" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff656565" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="¥" android:singleLine="true" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff656565" android:id="@id/my_lottery_cg_record_spendMoney_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20.00" android:singleLine="true" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0dip" android:textColor="#ff656565" android:id="@id/my_lottery_cg_record_buy_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:singleLine="true" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff656565" android:id="@id/my_lottery_cg_record_time_txt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_marginRight="10.0dip" android:text="2012-01-05" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff656565" android:id="@id/my_lottery_cg_record_buyTime_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="21:11" android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff656565" android:id="@id/my_lottery_cg_record_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="中奖状态：" android:singleLine="true" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff656565" android:id="@id/my_lottery_cg_record_state_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="未开奖" android:singleLine="true" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff656565" android:id="@id/my_lottery_cg_record_award" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="奖金：" android:singleLine="true" />
+                            <TextView android:textSize="14.0dip" android:textColor="#ff656565" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="¥" android:singleLine="true" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff656565" android:id="@id/my_lottery_cg_record_award_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00.00" android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_cg_record_NumberCount_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="追号共10期" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff656565" android:id="@id/my_lottery_cg_record_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="75.0dip" android:text="方案状态：" android:singleLine="true" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff656565" android:id="@id/my_lottery_details_fangan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="未无" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/kj_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/color_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

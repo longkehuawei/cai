@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/game_background" android:layout_width="fill_parent" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/game_common_text" android:gravity="center" android:id="@id/team_scores" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="xxxxxxxxxxxxxxx" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@color/game_common_text" android:gravity="center" android:id="@id/stop_message" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:text="xxxx\nxxxxx\nxxxx xx" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.0dip" android:textColor="@color/game_bold_text" android:gravity="center_vertical" android:id="@id/team_win_or_lost" android:background="@drawable/white" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="胜负：主胜" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/game_bold_text" android:gravity="center_vertical" android:id="@id/scores_win_or_lost" android:background="@drawable/white" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="1.0dip" android:text="胜负：主胜" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.0dip" android:textColor="@color/game_bold_text" android:gravity="center_vertical" android:id="@id/scores_big_or_small" android:background="@drawable/white" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="1.0dip" android:text="胜负：主胜" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/game_bold_text" android:gravity="center_vertical" android:id="@id/scores_win_gap" android:background="@drawable/white" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:layout_marginBottom="1.0dip" android:text="胜负：主胜" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

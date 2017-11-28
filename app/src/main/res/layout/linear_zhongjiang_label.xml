@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/linear_bisai_txt" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+    <TextView android:textColor="@color/cst_color_black" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主胜" />
+    <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(" />
+    <TextView android:textColor="@color/cst_color_black" android:id="@id/tv_peilv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.88" />
+    <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=")" />
+    <ImageView android:id="@id/iv_zhongjiang" android:background="@drawable/award_remark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

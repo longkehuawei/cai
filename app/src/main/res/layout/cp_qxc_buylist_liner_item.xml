@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/buylistlinearitem_relative_item" android:background="@drawable/listitem_pressed_style" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/buylistlinearitem_relative_layout" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/buylistlinearitem_btn_delete" android:background="@drawable/btn_remove_one_line_style" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/buylistlinearitem_ball_number_layout" android:paddingLeft="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/buylistlinearitem_btn_delete" android:layout_alignParentLeft="true">
+            <TextView android:textSize="16.0dip" android:textColor="@color/solid_red" android:id="@id/buylistlinearitem_tv_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/solid_red" android:id="@id/buylistlinearitem_tv_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/solid_red" android:id="@id/buylistlinearitem_tv_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/solid_red" android:id="@id/buylistlinearitem_tv_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/solid_red" android:id="@id/buylistlinearitem_tv_five" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/solid_red" android:id="@id/buylistlinearitem_tv_six" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/solid_red" android:id="@id/buylistlinearitem_tv_sevent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/buylistlinearitem_layout" android:paddingLeft="16.0dip" android:paddingTop="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/buylistlinearitem_btn_delete" android:layout_below="@id/buylistlinearitem_ball_number_layout" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_gray" android:id="@id/buylistlinearitem_tv_choose_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="普通投注" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_gray" android:id="@id/buylistlinearitem_tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="444注888元" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cst_line_449x1" android:layout_below="@id/buylistlinearitem_relative_layout" />
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="43.0dip">
+        <ImageView android:layout_gravity="center" android:background="@drawable/my_lottery_top_logo" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="19.0sp" android:textColor="@color/cst_color_white" android:gravity="center" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lottery_hall" android:layout_weight="2.0" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/cst_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/sign_in" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="签到" android:drawableLeft="@drawable/sign_in" android:layout_weight="1.0" android:layout_centerInParent="true" />
+    </LinearLayout>
+    <com.ui.main.view.MyScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="160.0dip">
+                <android.support.v4.view.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/dot_container" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/touming2" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="竞彩" />
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_jczq" android:background="@drawable/btn_shouye_left_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/lot_logo_jczq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_soccer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="竞彩足球" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_soccer_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="五大联赛开战" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_jzlq" android:background="@drawable/btn_shouye_right_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/lot_logo_jclq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_basketball" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="竞彩篮球" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_basketball_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="激情篮球赛事" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_jcdg" android:background="@drawable/btn_shouye_left_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/lot_type_jcdg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_dg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="竞彩单关" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_dg_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="单场也能投" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_sfc_1" android:background="@drawable/btn_shouye_right_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/lot_logo_jczq_sfc14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_sfc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="胜负彩" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_sfc_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="2元赢取500万" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_rx9" android:background="@drawable/btn_shouye_left_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/lot_logo_jczq_rx9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_rx9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="任选九" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_rx9_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="猜对9场就中奖" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/btn_shouye_right_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/touming2" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="高频彩" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_cp11ydj" android:background="@drawable/btn_shouye_left_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/lot_logo_11choose5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_cp11ydj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="十一运夺金" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_cp11ydj_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="10分钟一期" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_jx11xuan5" android:background="@drawable/btn_shouye_right_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/lot_logo_n11choose15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_jx11xuan5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="江西11选5" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_jx11xuan5_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="返奖率59%" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_gd11xuan5" android:background="@drawable/btn_shouye_left_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/lot_logo_gd11choose5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_gd11xuan5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="广东11选5" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_gd11xuan5_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="每天08:55-23:00" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_js11xuan5" android:background="@drawable/btn_shouye_right_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/lot_logo_hlj11c15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_js11xuan5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="江苏11选5" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_js11xuan5_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="返奖率59%" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_cqssc" android:background="@drawable/btn_shouye_left_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/new_logo_cqssc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_cpssc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重庆时时彩" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_cpssc_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="每天120期" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_hyssc" android:background="@drawable/btn_shouye_right_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/lot_logo_hyssc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_hyssc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="印尼五分彩" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_hyssc_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="好运快点来" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_hnwfc" android:background="@drawable/btn_shouye_left_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/new_logo_jxssc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_hnwfc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="河内五分彩" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_hnwfc_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="每天288期" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/lotteryhallact_linear_xjssc" android:background="@drawable/btn_shouye_right_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/new_logo_xjssc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新疆时时彩" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="每天96期" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="每天10:00-02:00" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lotteryhallact_linear_getxjsscTerm" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                        <ProgressBar android:id="@id/lotteryhall_act_pb_xjssc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleSmall" />
+                                        <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_red" android:id="@id/lotteryhall_act_tv_xjsscTerm" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取..." android:layout_centerInParent="true" />
+                                    </LinearLayout>
+                                    <TextView android:textSize="10.0dip" android:textColor="@color/cst_color_white" android:gravity="center" android:id="@id/lotteryhall_act_tv_xjsscTime" android:background="@drawable/cst_time_12x28" android:paddingTop="1.0dip" android:layout_width="140.0dip" android:layout_height="20.0dip" android:layout_marginTop="4.0dip" android:text="- - - - - -" android:layout_centerInParent="true" />
+                                    <Button android:textSize="18.0dip" android:textColor="@color/cst_color_red" android:id="@id/lotteryhallact_btn_toxjssc" android:background="@drawable/btn_cst_choose_num_style" android:layout_width="140.0dip" android:layout_height="30.0dip" android:layout_marginTop="8.0dip" android:text="@string/choose_num" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_jsk3" android:background="@drawable/btn_shouye_left_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/new_logo_jsk3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_jsk3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="江苏快3" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_jsk3_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="想赚要抓紧" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_jlk3" android:background="@drawable/btn_shouye_right_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/new_logo_jlk3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_jlk3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="吉林快三" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_jlk3_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="10分钟进账千元" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/touming2" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="低频彩" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_ssq" android:background="@drawable/btn_shouye_left_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/new_logo_ssq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_ssq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="双色球" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_ssq_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="彩民最爱  2元赢取1000万" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_fc3d" android:background="@drawable/btn_shouye_right_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/new_logo_fucai3d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_fc3d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="福彩3D" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_fc3d_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="简单3位赢千元" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_dlt" android:background="@drawable/btn_shouye_left_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/new_logo_dlt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_dlt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大乐透" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_dlt_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="奖池滚动，大奖即将开出" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_pl5" android:background="@drawable/btn_shouye_right_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/new_logo_pl5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_pl5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="排列五" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_pl5_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="2元赢取10万元" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_pl3" android:background="@drawable/btn_shouye_right_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/new_logo_pl3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/tv_pl3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="排列3" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/cst_lottery_other" android:id="@id/tv_pl3_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="简单3个号，猜中赢千元" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/btn_shouye_right_back_style" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.ui.main.view.MyScrollView>
+</LinearLayout>

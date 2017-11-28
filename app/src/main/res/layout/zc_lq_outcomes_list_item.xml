@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/border_full_line" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:id="@id/tv_saishi" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:id="@id/tv_visit" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/game_common_text" android:gravity="center" android:id="@id/tv_score" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/game_common_text" android:gravity="center" android:id="@id/tv_host" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/game_common_text" android:gravity="center" android:id="@id/tv_result" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:id="@id/tv_total" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" />
+</LinearLayout>

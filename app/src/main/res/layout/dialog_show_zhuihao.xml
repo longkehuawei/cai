@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/dialog_window_bg" android:layout_width="300.0dip" android:layout_height="400.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dialog_show_notice_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="10.0">
+            <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:src="@drawable/dialog_show_exit_logo" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/cst_Msg_color" android:gravity="center" android:id="@id/dialog_show_notice_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="修改追号方案" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cst_line_412x1" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="10.0" android:layout_above="@id/dialog_show_notice_title_layout">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:gravity="center_vertical" android:id="@id/dialog_show_oktash_textview" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:text="连续追号" />
+                        <Button android:textSize="16.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_show_oktash_btn_jian" android:background="@drawable/bg_edittext" android:layout_width="28.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:text="-" />
+                        <EditText android:textSize="14.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/continue_zhuihao" android:background="@drawable/bg_edittext" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginLeft="3.0dip" android:layout_marginBottom="0.0dip" android:text="1" android:maxLength="2" android:inputType="number" />
+                        <Button android:textSize="16.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_show_oktash_btn_jia" android:background="@drawable/bg_edittext" android:layout_width="28.0dip" android:layout_height="30.0dip" android:layout_marginLeft="3.0dip" android:text="+" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="期" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:layout_gravity="center" android:id="@id/dialog_show_oktash_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="起始倍数" />
+                        <Button android:textSize="16.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_show_oktash_beishu_jian" android:background="@drawable/bg_edittext" android:layout_width="28.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:text="-" />
+                        <EditText android:textSize="14.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/start_beishu" android:background="@drawable/bg_edittext" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginLeft="3.0dip" android:text="1" android:maxLength="2" android:inputType="number" />
+                        <Button android:textSize="16.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_show_oktash_beishu_jia" android:background="@drawable/bg_edittext" android:layout_width="28.0dip" android:layout_height="30.0dip" android:layout_marginLeft="3.0dip" android:text="+" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="倍" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="单倍奖金" />
+                        <EditText android:textSize="14.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/et_zjmoney" android:background="@drawable/bg_edittext" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginLeft="13.0dip" android:text="1" android:maxLength="5" android:inputType="number" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="元" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:gravity="center_vertical" android:id="@id/dialog_show_oktash_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="预期盈利" />
+                        <RadioButton android:id="@id/rd_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全程最低盈利率" />
+                        <EditText android:textSize="14.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/et_quancheng" android:background="@drawable/bg_edittext" android:layout_width="60.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:text="30" android:maxLength="6" android:inputType="number" />
+                        <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RadioButton android:id="@id/rd_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65.0dip" />
+                            <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="前" />
+                            <EditText android:textSize="14.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/et_qian" android:background="@drawable/bg_edittext" android:layout_width="40.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:text="1" android:maxLength="2" android:inputType="number" />
+                            <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="期" />
+                            <EditText android:textSize="14.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/et_qianbai" android:background="@drawable/bg_edittext" android:layout_width="60.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:text="1" android:maxLength="6" android:inputType="number" />
+                            <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:text="之后盈利率" />
+                            <EditText android:textSize="14.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/et_qianzhihou" android:background="@drawable/bg_edittext" android:layout_width="60.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:text="1" android:maxLength="6" android:inputType="number" />
+                            <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RadioButton android:id="@id/rd_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65.0dip" />
+                            <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全程最低盈利" />
+                            <EditText android:textSize="14.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/et_quanyuan" android:background="@drawable/bg_edittext" android:layout_width="60.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:text="10" android:maxLength="6" android:inputType="number" />
+                            <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_weight="10.0">
+            <LinearLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+                <Button android:textSize="16.0dip" android:textColor="@color/cst_color_baise" android:id="@id/dialog_show_oktash_btn_ok" android:background="@drawable/cst_gcjl_mid_style_2" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="生成方案" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+                <Button android:textSize="16.0dip" android:textColor="@color/cst_color_baise" android:id="@id/dialog_show_oktash_btn_cancel" android:background="@drawable/cst_gcjl_mid_style_2" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="取消" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

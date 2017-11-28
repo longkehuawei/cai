@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_bisai_txt" android:background="@color/linear_back_jc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_back_open" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/tv_bisai_text1" android:id="@id/tv_league" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="澳洲杯啊" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/tv_bisai_text1" android:id="@id/tv_matchday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周四001" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/tv_bisai_text1" android:id="@id/tv_jiezhi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:01截止" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/qiusai_down" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/tv_bisai_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="让球" android:ems="1" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="210.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:id="@id/tv_bisai_qidui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="曼联VS皇马" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                    <TextView android:textColor="@color/white" android:gravity="center" android:background="@color/tv_bisai_burangqiu" android:layout_width="15.0dip" android:layout_height="30.0dip" android:text="0" />
+                    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_rangqiushu" android:background="@color/tv_bisai_rangqiu_jian" android:layout_width="15.0dip" android:layout_height="30.0dip" android:text="-1" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="13.0sp" android:textColor="@color/fanan_text_color" android:gravity="center" android:id="@id/check_zhu_sheng" android:background="@drawable/jc_checkbox_selected" android:layout_width="70.0dip" android:layout_height="30.0dip" android:button="@null" android:text="主胜1.27" />
+                        <CheckBox android:textSize="13.0sp" android:textColor="@color/fanan_text_color" android:gravity="center" android:id="@id/check_zhu_ping" android:background="@drawable/jc_checkbox_selected" android:layout_width="70.0dip" android:layout_height="30.0dip" android:button="@null" android:text="平1.27" />
+                        <CheckBox android:textSize="13.0sp" android:textColor="@color/fanan_text_color" android:gravity="center" android:id="@id/check_zhu_fu" android:background="@drawable/jc_checkbox_selected" android:layout_width="70.0dip" android:layout_height="30.0dip" android:button="@null" android:text="客胜1.27" />
+                        <CheckBox android:textSize="13.0sp" android:textColor="@color/tv_bisai_text2" android:gravity="center" android:id="@id/check_zhu_weikaishou" android:background="@drawable/jc_checkbox_selected" android:visibility="gone" android:clickable="false" android:layout_width="210.0dip" android:layout_height="30.0dip" android:button="@null" android:text="未开售" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="13.0sp" android:textColor="@color/fanan_text_color" android:gravity="center" android:id="@id/check_ke_sheng" android:background="@drawable/jc_checkbox_selected" android:layout_width="70.0dip" android:layout_height="30.0dip" android:button="@null" android:text="胜1.27" />
+                        <CheckBox android:textSize="13.0sp" android:textColor="@color/fanan_text_color" android:gravity="center" android:id="@id/check_ke_ping" android:background="@drawable/jc_checkbox_selected" android:layout_width="70.0dip" android:layout_height="30.0dip" android:button="@null" android:text="平1.27" />
+                        <CheckBox android:textSize="13.0sp" android:textColor="@color/fanan_text_color" android:gravity="center" android:id="@id/check_ke_fu" android:background="@drawable/jc_checkbox_selected" android:layout_width="70.0dip" android:layout_height="30.0dip" android:button="@null" android:text="客胜1.27" />
+                        <CheckBox android:textSize="13.0sp" android:textColor="@color/tv_bisai_text2" android:gravity="center" android:id="@id/check_ke_kaishou" android:background="@drawable/jc_checkbox_selected" android:visibility="gone" android:clickable="false" android:layout_width="210.0dip" android:layout_height="30.0dip" android:button="@null" android:text="未开售" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/tv_bisai_text1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:text="展开全部" android:ems="2" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/tv_bisai_text1" android:id="@id/tv_league" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="澳洲杯啊" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/tv_bisai_text1" android:id="@id/tv_league" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周四001" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/tv_bisai_text1" android:id="@id/tv_league" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:01截止" />
+    </LinearLayout>
+</LinearLayout>

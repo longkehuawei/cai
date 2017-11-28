@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rechargeunin_relative_main" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/accountdetail_act_group_frame_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/share_toolbarbg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+                <ImageButton android:id="@id/recharge_unin_btn_goBack" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="40.0dip" android:layout_height="31.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/cst_btn_back" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0dip" android:textColor="@color/cst_title_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="银联卡充值" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </FrameLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/rechargeunin_linear_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="12.0dip">
+                    <LinearLayout android:orientation="vertical" android:id="@id/rechargeunin_relative_main" android:background="@drawable/bg_pressed_myinformation_bg_608x651" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                            <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="充值金额：" />
+                            <EditText android:textSize="16.0dip" android:id="@id/recharge_unin_et_price" android:layout_width="182.0dip" android:layout_height="40.0dip" android:text="100" android:scrollHorizontally="true" android:maxLength="5" android:numeric="integer" android:layout_weight="1.0" />
+                            <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="元" />
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/cst_line_449x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+                        <TextView android:textColor="#ff838383" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="免手续费,中国银联开发的最新电子支付工具，全面支持各大银行借记卡，信用卡，提供安全快捷的支付方式。" />
+                        <ImageView android:background="@drawable/cst_line_449x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="5.0dip" />
+                        <Button android:textSize="20.0dip" android:textColor="@color/common_txt" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/recharge_unin_btn_submit" android:background="@drawable/btn_cst_background_style" android:layout_width="140.0dip" android:layout_height="37.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip" android:text="充值" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                            <TextView android:textColor="@color/cst_color_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="        中国银联采用卡密分离核心专利技术,彻底保障用户交易安全!" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:background="@drawable/cst_line_449x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

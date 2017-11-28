@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/share_toolbarbg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageButton android:id="@id/settings_act_help_btn_back" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/cst_btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/cst_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠活动" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <TextView android:textSize="28.0dip" android:textColor="@color/cst_color_black" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_trip" />
+</LinearLayout>

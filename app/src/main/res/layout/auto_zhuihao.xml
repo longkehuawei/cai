@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/yellow_slide" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/cp11ydj_tittle_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="46.0dip">
+                <ImageButton android:id="@id/cp11ydj_lotteryhall_act_btn_back" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" android:src="@drawable/lin2" android:layout_toRightOf="@id/cp11ydj_lotteryhall_act_btn_back" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_show_popwindow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/cp11ydj_lotteryhall_act_btn_back" android:layout_centerVertical="true">
+                    <TextView android:textSize="20.0sp" android:textColor="@color/cst_color_white" android:id="@id/check_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="前一" />
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:src="@drawable/ico_jtx" />
+                </LinearLayout>
+                <TextView android:textSize="18.0dip" android:textColor="@color/white" android:id="@id/cp_type_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="智能追号" android:layout_centerInParent="true" />
+                <ImageButton android:id="@id/cp11ydj_lotteryhall_act_btn_refresh" android:background="@drawable/btn_lotterychoose_menu_style" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/cst_btn_menu" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageButton android:id="@id/cpchooselistact_btn_hemai" android:background="@drawable/btn_lotterychoose_hemai_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cp_tv_code_list_title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="37.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_black" android:gravity="center" android:id="@id/cp_tv_issure_time_code_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="距--期    截止 : " />
+                <TextView android:textSize="16.0sp" android:textColor="@color/red" android:gravity="center" android:id="@id/cp_tv_issure_time_code_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+            </LinearLayout>
+            <ImageView android:gravity="right" android:id="@id/cp_lottery_code_view_down" android:background="@drawable/array" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            <ImageView android:gravity="right" android:id="@id/cp_lottery_code_view_up" android:background="@drawable/array_up" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            <ProgressBar android:id="@id/progress_act_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleSmall" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="25.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/cst_color_black" android:id="@id/btn_textqs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="共多少期" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/cst_color_black" android:id="@id/btn_textylv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="全程最低盈利率30%" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:textSize="18.0sp" android:textColor="#ff167efb" android:id="@id/btn_modify" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="修改方案 >  " />
+    </LinearLayout>
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="3,4,5">
+        <TableRow>
+            <TextView android:textColor="@color/cst_color_black" android:gravity="center" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="序号" />
+            <TextView android:textColor="@color/cst_color_black" android:gravity="center" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="期号" />
+            <TextView android:textColor="@color/cst_color_black" android:gravity="center" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="倍数" />
+            <TextView android:textColor="@color/cst_color_black" android:gravity="center" android:text="累计投入" />
+            <TextView android:textColor="@color/cst_color_black" android:gravity="center" android:text="中奖盈利" />
+            <TextView android:textColor="@color/cst_color_black" android:gravity="center" android:layout_width="70.0dip" android:layout_marginRight="10.0dip" android:text="盈利率" />
+        </TableRow>
+    </TableLayout>
+    <ListView android:id="@id/my_list" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/chooseact_linear_bottom" android:background="@drawable/bottom_background" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentBottom="true">
+        <CheckBox android:id="@id/my_check_end1" android:background="@drawable/btn_check_style" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip" android:checked="true" android:button="@null" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/yilou_dark_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="中奖撤单" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/yilou_dark_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共追" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/red" android:layout_gravity="center" android:id="@id/tv_qishu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/yilou_dark_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="期" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/red" android:layout_gravity="center" android:id="@id/cpchooselistact_tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="10" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/yilou_dark_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:textSize="14.0dip" android:textColor="@drawable/balltext_color_style_2" android:layout_gravity="center" android:background="@drawable/cst_gcjl_mid_style_2" android:visibility="gone" android:layout_width="65.0dip" android:layout_height="35.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="8.0dip" android:text="发起合买" />
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/cpchooselistact_btn_submit" android:background="@drawable/cst_gcjl_mid_style_2" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="10.0dip" android:text="付款" />
+    </LinearLayout>
+</LinearLayout>

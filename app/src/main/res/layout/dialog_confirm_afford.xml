@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/game_bold_text" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="抽奖提示" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="今日免费抽奖机会已经消耗，继续抽奖每次会消耗两元" />
+    <View android:background="@color/divideColor" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/sign_angry_color" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/odds_item_border_full_line" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="取消抽奖" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/sign_angry_color" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/odds_item_border_full_line" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="开始抽奖" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

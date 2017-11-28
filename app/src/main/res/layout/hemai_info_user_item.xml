@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/linearlayout_context" android:layout_width="fill_parent" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right" android:layout_width="55.0dip" android:layout_height="30.0dip" android:layout_marginLeft="6.0dip">
+        <TextView android:textColor="@color/my_color" android:gravity="right" android:id="@id/xuhao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip">
+        <TextView android:textColor="@color/my_color" android:gravity="right" android:id="@id/qihao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <TextView android:textColor="@color/my_color" android:gravity="right" android:id="@id/beishu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip">
+        <TextView android:textColor="@color/my_color" android:gravity="right" android:id="@id/touru" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:visibility="gone" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+        <TextView android:textColor="@color/cst_color_red" android:gravity="left" android:id="@id/yingli" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:visibility="gone" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <TextView android:textColor="@color/cst_color_red" android:gravity="left" android:id="@id/yinglilv" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/tittle_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/chooseact_linear_bottomUp" android:background="@drawable/bottom_background" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="16.0dip" android:textColor="@color/red" android:layout_gravity="center" android:id="@id/chooseact_btn_clean" android:background="@drawable/cst_gcjl_mid_style" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_marginLeft="16.0dip" android:text="@string/btn_clear_text" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/cst_money_text" android:gravity="center" android:id="@id/tv_changci" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请至少选择两场比赛" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/tv_bisai_text2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="页面赔率仅供参考,请以出票赔率为准" />
+        </LinearLayout>
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/chooseact_btn_submit" android:background="@drawable/cst_gcjl_mid_style_2" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="确定" />
+    </LinearLayout>
+    <com.ui.main.view.PinnedHeaderExpandableListView android:id="@id/listview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:groupIndicator="@null" android:divider="@null" android:layout_above="@id/chooseact_linear_bottomUp" android:layout_below="@id/tittle_bar" />
+    <include android:id="@id/loadfail" android:layout_above="@id/chooseact_linear_bottomUp" layout="@layout/loading_fail" />
+</RelativeLayout>

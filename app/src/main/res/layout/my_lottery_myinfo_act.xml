@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/myinfo_act_third_linear_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+                <ImageButton android:id="@id/myinfo_act_third_btn_goBack" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" android:src="@drawable/lin2" android:layout_toRightOf="@id/myinfo_act_third_btn_goBack" android:contentDescription="@drawable/icon" />
+                <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个人信息" android:layout_centerInParent="true" />
+                <ImageButton android:textColor="@color/common_txt" android:id="@id/myinfo_act_third_btn_refresh" android:background="@drawable/btn_lotterychoose_update_style" android:layout_width="40.0dip" android:layout_height="31.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/cst_btn_update" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </FrameLayout>
+        <ScrollView android:id="@id/myinfo_act_third_scrollview" android:background="@color/yellow_slide" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/myinfo_act_third_linear_info" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:id="@id/myinfo_act_third_linear_baseInfo" android:background="@drawable/member_bg_02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                        <LinearLayout android:gravity="center_vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <com.ui.main.view.CircleImageView android:layout_gravity="center_vertical" android:id="@id/myinfo_act_third_iv_userIcon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/userinfoa" />
+                                <TextView android:textSize="8.0dip" android:textColor="@color/myinfo_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="3.0dip" android:text="@string/click_change_image" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/myinfo_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="用  户  名:" />
+                                    <TextView android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_tv_userName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="CST2012" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/myinfo_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="真实性名:" />
+                                    <TextView android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_third_tv_userName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="ABC" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/myinfo_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="注册日期:" />
+                                    <TextView android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_tv_regTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/cst_color_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="已填信息可不用输入" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/cst_line_412x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <TextView android:textColor="@color/myinfo_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="性        别:" />
+                            <RadioGroup android:orientation="horizontal" android:id="@id/myinfo_act_third_rg_sex" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                                <requestFocus />
+                                <RadioButton android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_third_rb_male" android:background="@null" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="男" android:drawableLeft="@drawable/rb_myinfo_sex_style" android:layout_weight="1.0" />
+                                <RadioButton android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_third_rb_female" android:background="@null" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="女" android:drawableLeft="@drawable/rb_myinfo_sex_style" android:layout_weight="1.0" />
+                                <RadioButton android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_third_rb_secret" android:background="@null" android:paddingLeft="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="保密" android:drawableLeft="@drawable/rb_myinfo_sex_style" android:layout_weight="1.0" />
+                            </RadioGroup>
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/cst_line_412x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:gravity="center" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <TextView android:textColor="@color/myinfo_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="真实姓名:" />
+                            <FrameLayout android:layout_width="150.0dip" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                                <EditText android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_third_et_realname" android:layout_width="180.0dip" android:layout_height="40.0dip" android:singleLine="true" android:maxLength="12" android:inputType="text" />
+                            </FrameLayout>
+                            <ImageView android:background="@drawable/cst_arraw_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/cst_line_412x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:gravity="center" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <TextView android:textColor="@color/myinfo_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号码:" />
+                            <FrameLayout android:layout_width="150.0dip" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                                <EditText android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_third_et_phone" android:layout_width="180.0dip" android:layout_height="40.0dip" android:singleLine="true" android:maxLength="11" android:inputType="number" />
+                            </FrameLayout>
+                            <ImageView android:background="@drawable/cst_arraw_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/cst_line_412x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:gravity="center" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <TextView android:textColor="@color/myinfo_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电子邮箱:" />
+                            <FrameLayout android:layout_width="150.0dip" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                                <EditText android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_third_et_userEmail" android:layout_width="180.0dip" android:layout_height="40.0dip" android:singleLine="true" android:maxLength="40" android:inputType="textEmailAddress" />
+                            </FrameLayout>
+                            <ImageView android:background="@drawable/cst_arraw_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/cst_line_412x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:gravity="center" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <TextView android:textColor="@color/myinfo_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="身份证号:" />
+                            <FrameLayout android:layout_width="150.0dip" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                                <EditText android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_third_et_userSfzNum" android:layout_width="180.0dip" android:layout_height="40.0dip" android:singleLine="true" android:maxLength="18" />
+                            </FrameLayout>
+                            <ImageView android:background="@drawable/cst_arraw_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/cst_line_412x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <ImageView android:background="@drawable/cst_line_412x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:paddingLeft="10.0dip" android:paddingTop="1.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <TextView android:textColor="@color/myinfo_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="银行名称:" />
+                            <Spinner android:textSize="16.0dip" android:id="@id/myinfo_act_third_et_userBankName" android:layout_width="190.0dip" android:layout_height="40.0dip" android:layout_marginTop="4.0dip" android:singleLine="true" />
+                            <ImageView android:background="@drawable/cst_arraw_right" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/cst_line_412x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:gravity="center" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <TextView android:textColor="@color/myinfo_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="银行卡号:" />
+                            <FrameLayout android:layout_width="150.0dip" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                                <EditText android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_third_et_userYhkNum" android:layout_width="180.0dip" android:layout_height="40.0dip" android:singleLine="true" android:maxLength="22" android:inputType="number" />
+                            </FrameLayout>
+                            <ImageView android:background="@drawable/cst_arraw_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/cst_line_412x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:gravity="center" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <TextView android:textColor="@color/myinfo_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开户支行:" />
+                            <FrameLayout android:layout_width="150.0dip" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                                <EditText android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_third_et_userBankAddress" android:layout_width="180.0dip" android:layout_height="40.0dip" android:singleLine="true" android:maxLength="80" />
+                            </FrameLayout>
+                            <ImageView android:background="@drawable/cst_arraw_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <Button android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/myinfo_act_third_btn_submit" android:background="@drawable/my_lottery_btn_bg" android:layout_width="fill_parent" android:layout_height="37.0dip" android:text="提交" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@id/fl_photo_choice" android:background="#33aaaaaa" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_choice_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+            <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/common_grey" android:gravity="center" android:id="@id/please_choose_pic" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="选择图像" />
+            <View android:background="@color/color_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <TextView android:textSize="20.0dip" android:textColor="@color/common_blue" android:gravity="center" android:id="@id/system_image" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="系统图像" />
+            <View android:background="@color/color_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <TextView android:textSize="20.0dip" android:textColor="@color/common_blue" android:gravity="center" android:id="@id/take_a_photo" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="拍照" />
+            <View android:background="@color/color_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <TextView android:textSize="20.0dip" android:textColor="@color/common_blue" android:gravity="center" android:id="@id/photo_album" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="相册" />
+            <View android:background="@color/color_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <TextView android:textSize="20.0dip" android:textColor="@color/common_blue" android:gravity="center" android:id="@id/cancel" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="取消" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

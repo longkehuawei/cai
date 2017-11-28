@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/set_bg_middle_pressed_300x52" />
+    <item android:state_focused="false" android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/set_bg_middle_pressed_300x52" />
+    <item android:state_focused="true" android:state_enabled="true" android:state_pressed="false" android:drawable="@drawable/set_bg_middle_pressed_300x52" />
+    <item android:state_focused="false" android:state_enabled="true" android:state_pressed="false" android:drawable="@drawable/anull_icon" />
+    <item android:state_enabled="false" android:drawable="@drawable/set_bg_middle_disable_27x54" />
+</selector>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/goucai_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/cp11ydj_tittle_bar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/cp11ydj_tittle_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="46.0dip">
+                <ImageButton android:id="@id/cp11ydj_lotteryhall_act_btn_back" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/duoxuan_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_toRightOf="@id/cp11ydj_lotteryhall_act_btn_back" android:layout_centerInParent="true">
+                    <TextView android:textSize="20.0sp" android:textColor="@color/cst_color_white" android:id="@id/check_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="前一" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:src="@drawable/ico_jtx" android:layout_toRightOf="@id/check_text" android:layout_centerInParent="true" />
+                </LinearLayout>
+                <ImageButton android:id="@id/cp11ydj_lotteryhall_act_btn_refresh" android:background="@drawable/btn_lotterychoose_menu_style" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/cst_btn_menu" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageButton android:id="@id/cp11ydj_lotteryhall_act_btn_hemai" android:background="@drawable/btn_lotterychoose_hemai_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </FrameLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/linearLayout02" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v4.view.ViewPager android:id="@id/slideMenu" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="37.0dip" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/linearLayout03" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/ivPreviousButton" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/previous_button" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/linearLayout05" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/ivNextButton" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/next_button" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/ivMenuBackground" android:paddingTop="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/gcjl_menubg_img" android:layout_centerVertical="true" android:contentDescription="@drawable/icon" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cp_tv_code_list_title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="37.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:gravity="center" android:id="@id/cp_tv_issure_time_code_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="距------期  截止:" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/red" android:gravity="center" android:id="@id/cp_tv_issure_time_code_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0:00" />
+            </LinearLayout>
+            <ImageView android:gravity="right" android:id="@id/cp_lottery_code_view_down" android:background="@drawable/array" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            <ImageView android:gravity="right" android:id="@id/cp_lottery_code_view_up" android:background="@drawable/array_up" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            <ProgressBar android:id="@id/progress_act_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleSmall" />
+        </LinearLayout>
+        <View android:background="@color/cst_color_gray" android:layout_width="fill_parent" android:layout_height="2.0px" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cp_tv_code_list" android:background="@color/cst_color_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/cst_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_red" android:gravity="center" android:id="@id/cp_tv_code_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="201205期  07 08 09 10 11 12" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cp_iv_code_first" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/cst_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_red" android:gravity="center" android:id="@id/cp_tv_code_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="201205期  07 08 09 10 11 12" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cp_iv_code_second" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/cst_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_red" android:gravity="center" android:id="@id/cp_tv_code_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="201205期  07 08 09 10 11 12" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cp_iv_code_three" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/cst_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_red" android:gravity="center" android:id="@id/cp_tv_code_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="201205期  07 08 09 10 11 12" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cp_iv_code_four" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/cst_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_red" android:gravity="center" android:id="@id/cp_tv_code_five" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="201205期  07 08 09 10 11 12" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cp_iv_code_five" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/linearLayout02" />
+    </LinearLayout>
+</RelativeLayout>

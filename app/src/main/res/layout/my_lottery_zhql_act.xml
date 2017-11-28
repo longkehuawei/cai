@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/myinfo_act_third_linear_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageButton android:id="@id/my_lottery_zhql_act_btn_goBack" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" android:src="@drawable/lin2" android:layout_toRightOf="@id/my_lottery_zhql_act_btn_goBack" android:contentDescription="@drawable/icon" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账户全览" android:layout_centerInParent="true" />
+            <ImageButton android:textColor="@color/common_txt" android:id="@id/my_lottery_zhql_act_btn_refresh" android:background="@drawable/btn_lotterychoose_update_style" android:layout_width="40.0dip" android:layout_height="31.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/cst_btn_update" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <ScrollView android:id="@id/myinfo_act_third_scrollview" android:background="@color/yellow_slide" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/myinfo_act_third_linear_info" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/myinfo_act_third_linear_baseInfo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/set_bg_22x28" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/myinfo_act_third_iv_userIcon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/member_photo2" />
+                            <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="用户名:" />
+                                    <TextView android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_cst_userName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="---" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="账户余额:" />
+                                    <TextView android:textColor="@color/cst_color_red" android:id="@id/myinfo_act_cst_userMoney" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="¥00.00" />
+                                    <TextView android:textColor="@color/cst_color_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="元" android:layout_toLeftOf="@id/myinfo_act_cst_userMoney" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="我的积分:" />
+                                    <TextView android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_cst_userScore" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="00.00" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/line_default_myinformation_l_608x651" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                            <TextView android:textColor="@color/cst_color_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="性 别:" />
+                            <TextView android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_cst_sex" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="---" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textColor="@color/cst_color_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="电子邮箱:" />
+                                <TextView android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_cst_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="---" android:singleLine="true" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+                                <TextView android:textColor="@color/cst_color_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="手机号码:" />
+                                <TextView android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_cst_tel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="---" android:singleLine="true" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+                                <TextView android:textColor="@color/cst_color_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="身份证号:" />
+                                <TextView android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_cst_sfid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="---" android:singleLine="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="30.0dip">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textColor="@color/cst_color_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="银行名称:" />
+                                <TextView android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_cst_bankname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="---" android:singleLine="true" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+                                <TextView android:textColor="@color/cst_color_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="银行卡号:" />
+                                <TextView android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_cst_bankid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="---" android:singleLine="true" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+                                <TextView android:textColor="@color/cst_color_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="开户支行:" />
+                                <TextView android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_cst_bankaddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="---" android:singleLine="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/myinfo_act_linear_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                        <TextView android:textColor="@color/cst_color_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="温馨提示：" />
+                        <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="如果你已经充值，银行账户已扣款，而您的账户还没有增加，请致电我们，我们将在第一时间为您处理！客服QQ：2275002280" />
+                        <TextView android:textColor="@color/cst_color_orange" android:id="@id/myinfo_act_third_tv_userName" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="资金被冻结的可能原因：" />
+                        <TextView android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_third_tv_userName" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="1.方案发起人保底；2.用户取款；3.追号冻结；4.自动跟单冻结。" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

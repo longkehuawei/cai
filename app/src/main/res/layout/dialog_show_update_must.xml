@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/dialog_window_bg" android:layout_width="300.0dip" android:layout_height="200.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="6.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:src="@drawable/dialog_show_exit_logo" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/cst_Msg_color" android:gravity="center" android:id="@id/dialog_show_exit_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="需要升级才能继续运行" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cst_line_412x1" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="10.0">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="18.0dip" android:textColor="@color/cst_Msg_color" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_show_oktash_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+                <Button android:textSize="16.0dip" android:textColor="@color/cst_color_baise" android:id="@id/dialog_show_oktash_btn_ok" android:background="@drawable/btn_exit_dialog_style" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="立即升级" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv1000" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" />
+    <View android:background="@color/divideColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv500" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="500" />
+    <View android:background="@color/divideColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv200" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="200" />
+    <View android:background="@color/divideColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv100" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="100" />
+    <View android:background="@color/divideColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv50" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="50" />
+    <View android:background="@color/divideColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv10" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="10" />
+    <View android:background="@color/divideColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv1" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1" />
+    <View android:background="@color/divideColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

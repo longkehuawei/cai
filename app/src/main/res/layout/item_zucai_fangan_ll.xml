@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textColor="@color/hemai_text1" android:layout_gravity="center" android:id="@id/tv_changci" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周三003" />
+            <TextView android:textColor="@color/hemai_text1" android:layout_gravity="center" android:id="@id/tv_team" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="巴萨哎哎哎" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/color_gray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textColor="@color/hemai_text1" android:layout_gravity="center" android:id="@id/result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="待定" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:background="@color/color_gray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <TextView android:textColor="@color/hemai_text1" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_touzhu_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/kj_win" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/award_remark" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/tv_divided" />
+</LinearLayout>

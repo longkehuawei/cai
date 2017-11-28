@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="transparent">#00000000</item>
+    <item type="drawable" name="dark_gray">#ff9b9b9b</item>
+    <item type="drawable" name="friID_dark_gray">#ff6b6b6b</item>
+    <item type="drawable" name="hint">#ffb2b2b2</item>
+    <item type="drawable" name="light_gray">#ffeeeeee</item>
+    <item type="drawable" name="white">#ffffffff</item>
+    <item type="drawable" name="black">#ff000000</item>
+    <item type="drawable" name="blue">#ff0000ff</item>
+    <item type="drawable" name="light_blue">#ff549fd7</item>
+    <item type="drawable" name="green">#ff00ff00</item>
+    <item type="drawable" name="dark_green">#ff689145</item>
+    <item type="drawable" name="yellow">#fffffea4</item>
+    <item type="drawable" name="stream_title">#ff355063</item>
+    <item type="drawable" name="main_radio_d">#ff0b4458</item>
+    <item type="drawable" name="widget">#ffdeecf5</item>
+</resources>

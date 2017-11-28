@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textColor="@color/cst_color_black" android:layout_gravity="center" android:id="@id/tv_bisai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周三003" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/cst_color_black" android:id="@id/tv_teama" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="皇马" />
+                <TextView android:textColor="@color/red" android:id="@id/tv_rangqiushu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(-1)" />
+                <TextView android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  VS  " />
+                <TextView android:textColor="@color/cst_color_black" android:id="@id/tv_teamb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="巴萨哎哎哎" />
+                <TextView android:textColor="@color/red" android:id="@id/tv_rangqiushulq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(-1)" />
+            </LinearLayout>
+            <TextView android:textColor="@color/cst_color_black" android:layout_gravity="center" android:id="@id/tv_yushezongfen" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预设总分(0.00)" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/color_gray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textColor="@color/cst_color_black" android:layout_gravity="center" android:id="@id/tv_winnumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="待定" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:background="@color/color_gray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <TextView android:textColor="@color/cst_color_black" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_touzhunumber" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@color/color_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

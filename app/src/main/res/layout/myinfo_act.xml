@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/share_toolbarbg" android:layout_width="fill_parent" android:layout_height="43.0dip">
+        <ImageButton android:id="@id/myinfo_act_btn_goBack" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="40.0dip" android:layout_height="31.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/cst_btn_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/cst_title_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="个人信息" android:layout_centerInParent="true" />
+        <ImageButton android:textColor="@color/common_txt" android:id="@id/myinfo_act_btn_refresh" android:background="@drawable/btn_lotterychoose_update_style" android:layout_width="40.0dip" android:layout_height="31.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/cst_btn_update" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/myinfo_bg_320x76" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/myinfo_act_img_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/member_photo2" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/row_title" android:gravity="fill_horizontal" android:layout_gravity="fill_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用  户  名：" />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_tv_userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dip">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账户余额：" />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/solid_red" android:id="@id/myinfo_act_tv_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TableLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:background="@drawable/set_bg_22x28" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:stretchColumns="1">
+                <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="真实姓名：" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_tv_realName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </TableRow>
+                <View android:background="@drawable/set_line_298x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="身份证号：" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_tv_idCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </TableRow>
+                <View android:background="@drawable/set_line_298x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TableRow android:id="@id/myinfo_act_row_mobile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号码：" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_tv_telephoneNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </TableRow>
+                <View android:background="@drawable/set_line_298x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TableRow android:id="@id/myinfo_act_row_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="固定电话：" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_tv_phoneNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </TableRow>
+                <View android:background="@drawable/set_line_298x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TableRow android:id="@id/myinfo_act_row_eMail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电子邮箱：" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_tv_eMail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </TableRow>
+                <View android:background="@drawable/set_line_298x1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TableRow android:id="@id/myinfo_act_row_qq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Q Q号码 ：" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/myinfo_act_tv_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

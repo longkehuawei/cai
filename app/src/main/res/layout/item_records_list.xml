@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/lot_image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="25.0dip" android:src="@drawable/award_logo_11x5" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/game_common_text" android:id="@id/lot_name" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:id="@id/lot_total_money" android:paddingLeft="5.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:id="@id/whether_win" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_common_text" android:id="@id/lot_catch_num" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/game_common_text" android:id="@id/lot_issue" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:id="@id/atm_time" android:paddingLeft="5.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_common_text" android:id="@id/lot_win_money" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:id="@id/whether_over" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/jiantou" />
+</LinearLayout>

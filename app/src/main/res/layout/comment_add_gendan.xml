@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/top" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="left|center" android:id="@id/shaidan_comment_back" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/img_jt" android:layout_weight="2.0" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/producing_gendan" android:layout_weight="4.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="right|center" android:id="@id/shaidan_comment_send" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dingzhi_now" android:layout_weight="2.0" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="选择跟单方式" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/text_bg" android:background="@color/color_gray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/fixed_share_bg" android:background="@color/common_red" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="@string/fixed_share" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:id="@id/fixed_proportion_bg" android:background="@color/white" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="@string/fixed_proportion" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:id="@id/fixed_share" android:background="@color/white" android:padding="10.0dip" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="@string/fixed_share" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/fixed_proportion" android:background="@color/common_red" android:padding="10.0dip" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="@string/fixed_proportion" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_fixed_share" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="跟单份额：" />
+            <EditText android:textSize="16.0sp" android:id="@id/gendan_share" android:layout_width="180.0dip" android:layout_height="wrap_content" android:hint="请填写跟单份额" android:inputType="number" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="份" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="跟单期数：" />
+            <EditText android:textSize="16.0sp" android:id="@id/gendan_periods" android:layout_width="180.0dip" android:layout_height="wrap_content" android:hint="请填写跟单期数" android:inputType="number" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="期" />
+        </LinearLayout>
+        <TextView android:textColor="@color/cst_color_orange" android:background="@color/color_gray" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/fixed_share_rules" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_fixed_proportion" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="跟单比例：" />
+            <EditText android:textSize="16.0sp" android:id="@id/gendan_proportion_num" android:layout_width="180.0dip" android:layout_height="wrap_content" android:hint="请填写跟单比例" android:inputType="number" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="%" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="最大份额：" />
+            <EditText android:textSize="16.0sp" android:id="@id/gendan_proportion_max" android:layout_width="180.0dip" android:layout_height="wrap_content" android:hint="请填写跟单份额" android:inputType="number" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="份" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="跟单期数：" />
+            <EditText android:textSize="16.0sp" android:id="@id/gendan_proportion_periods" android:layout_width="180.0dip" android:layout_height="wrap_content" android:hint="请填写跟单期数" android:inputType="number" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="期" />
+        </LinearLayout>
+        <TextView android:textColor="@color/cst_color_orange" android:background="@color/color_gray" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/fixed_proportion_rules" />
+    </LinearLayout>
+</LinearLayout>

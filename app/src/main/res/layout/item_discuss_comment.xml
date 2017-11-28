@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/game_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_blue" android:id="@id/discuss_comment_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxx:" />
+    <TextView android:textSize="12.0sp" android:id="@id/discuss_comment_content" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hh" android:layout_weight="1.0" />
+</LinearLayout>

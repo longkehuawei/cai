@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/sign_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_close" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/close_sign" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_sound" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/setting_max_sound_sign" android:layout_toLeftOf="@id/iv_records" />
+                <ImageView android:id="@id/iv_records" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/choujiang_record" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="120.0dip" android:src="@drawable/sign_logo" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总奖池：" />
+                <TextView android:textSize="30.0sp" android:textColor="@color/red" android:layout_gravity="center_horizontal" android:id="@id/tv_total_awards" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="元" />
+                <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_extra_lucky_draw" android:background="@drawable/zq_text_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:text="每次抽奖消耗两元" />
+            <com.ui.main.view.ScrollTextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/winning_informations" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/sign_bg" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="270.0dip" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv1" android:text="奖品1" android:drawableTop="@drawable/money" style="@style/tv_sign" />
+                    <TextView android:id="@id/tv2" android:text="奖品2" android:drawableTop="@drawable/money" style="@style/tv_sign" />
+                    <TextView android:id="@id/tv3" android:text="奖品3" android:drawableTop="@drawable/money" style="@style/tv_sign" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv8" android:text="奖品8" android:drawableTop="@drawable/money" style="@style/tv_sign" />
+                    <TextView android:textSize="25.0sp" android:textColor="@color/red" android:gravity="center" android:id="@id/tvStart" android:background="@drawable/sign_start_nor" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="抽奖" android:layout_weight="1.0" />
+                    <TextView android:id="@id/tv4" android:text="奖品4" android:drawableTop="@drawable/money" style="@style/tv_sign" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv7" android:text="奖品7" android:drawableTop="@drawable/money" style="@style/tv_sign" />
+                    <TextView android:id="@id/tv6" android:text="奖品6" android:drawableTop="@drawable/money" style="@style/tv_sign" />
+                    <TextView android:id="@id/tv5" android:text="奖品5" android:drawableTop="@drawable/money" style="@style/tv_sign" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:background="#ff3daf36" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/tv_lucky_draw_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/sign_jb" android:layout_toRightOf="@id/iv_close" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/user_money" android:layout_width="80.0dip" android:layout_height="fill_parent" android:text="201566" android:singleLine="true" android:layout_centerInParent="true" />
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_bs" android:background="@drawable/tv_lucky_draw_money" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="1倍" android:singleLine="true" android:drawableRight="@drawable/hemai_n1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/accountdetail_act_group_frame_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageButton android:id="@id/itn_back" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" android:src="@drawable/lin2" android:layout_toRightOf="@id/recharge_yb_btn_goBack" android:contentDescription="@drawable/icon" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="智付充值" android:layout_centerInParent="true" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/lotteryhall_act_btn_baocun" android:layout_width="wrap_content" android:layout_height="43.0dip" android:layout_marginRight="20.0dip" android:text="保存图片" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/lotteryinfoact_pbr_refresh" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textColor="@color/cst_color_black" android:layout_gravity="center" android:id="@id/tv_showcz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="10.0dip" android:text="111" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_txt" android:visibility="gone" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" />
+    </LinearLayout>
+    <WebView android:layout_gravity="center" android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

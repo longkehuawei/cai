@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/dialog_window_bg" android:layout_width="300.0dip" android:layout_height="200.0dip">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="6.0">
+            <TextView android:textSize="16.0dip" android:textColor="@color/cst_Msg_color" android:gravity="center" android:id="@id/viewerutildialogshowrandomdialog_tv_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="5.0">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                <ImageView android:layout_gravity="center" android:background="@drawable/dialog_reduce_default" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:id="@id/viewerutildialogshowrandomdialog_btn_reduce" android:background="@drawable/btn_random_reduce_style" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_weight="2.0">
+                <EditText android:id="@id/viewerutildialogshowrandomdialog_edt_count" android:background="@drawable/edt_loginandregist_style" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:editable="false" android:inputType="number" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_weight="4.0">
+                <ImageView android:layout_gravity="center" android:background="@drawable/dialog_add_default" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:id="@id/viewerutildialogshowrandomdialog_btn_add" android:background="@drawable/btn_random_plus_style" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_weight="6.0">
+            <LinearLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+                <Button android:textSize="16.0dip" android:textColor="@color/cst_color_baise" android:id="@id/viewerutildialogshowrandomdialog_btn_ok" android:background="@drawable/btn_exit_dialog_style" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="@string/ok" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+                <Button android:textSize="16.0dip" android:textColor="@color/cst_color_baise" android:id="@id/viewerutildialogshowrandomdialog_btn_cancel" android:background="@drawable/btn_exit_dialog_style" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="@string/Cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

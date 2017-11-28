@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/main_bottom_layout" android:background="@drawable/bottom_main_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/m_f_radiogroup_menu" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:checkedButton="@id/m_rg_rb_lottery">
+            <RadioButton android:gravity="center" android:id="@id/m_rg_rb_lottery" android:paddingTop="10.0dip" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@drawable/m_btn_background_icon" android:drawableTop="@drawable/m_btn_lottery_style" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/m_rg_rb_option" android:paddingTop="10.0dip" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@drawable/m_btn_background_icon" android:drawableTop="@drawable/m_btn_option_style" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/m_rg_rb_history" android:paddingTop="10.0dip" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@drawable/m_btn_background_icon" android:drawableTop="@drawable/m_btn_history_style" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/m_rg_rb_recharge" android:paddingTop="10.0dip" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@drawable/m_btn_background_icon" android:drawableTop="@drawable/m_btn_recharge_style" android:layout_weight="1.0" />
+        </RadioGroup>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/main_mount_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/main_bottom_layout" android:layout_alignParentTop="true" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/main_loading_layout" android:background="@drawable/background_caishitong" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

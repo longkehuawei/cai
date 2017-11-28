@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:background="@drawable/zq_text_shape" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="十一运夺金"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

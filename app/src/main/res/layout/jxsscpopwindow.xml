@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_main" android:background="@drawable/xuanxiang_background" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <CheckBox android:id="@id/b1" android:visibility="gone" android:layout_margin="1.0dip" android:text="五星直选" style="@style/tab_left" />
+        <CheckBox android:id="@id/b2" android:visibility="gone" android:layout_margin="1.0dip" android:text="五星通选" style="@style/tab_left" />
+        <CheckBox android:id="@id/b3" android:layout_margin="1.0dip" android:text="四星" style="@style/tab_left" />
+        <CheckBox android:id="@id/b4" android:layout_margin="1.0dip" android:checked="true" android:text="三星" style="@style/tab_left" />
+        <CheckBox android:id="@id/b5" android:layout_margin="1.0dip" android:text="二星" style="@style/tab_left" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <CheckBox android:id="@id/b6" android:layout_margin="1.0dip" android:text="一星" style="@style/tab_left" />
+        <CheckBox android:id="@id/b7" android:layout_margin="1.0dip" android:text="任选一" style="@style/tab_left" />
+        <CheckBox android:id="@id/b8" android:layout_margin="1.0dip" android:text="任选二" style="@style/tab_left" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <CheckBox android:id="@id/b9" android:layout_margin="1.0dip" android:text="大小单双" style="@style/tab_left" />
+        <CheckBox android:enabled="false" android:clickable="false" android:layout_margin="1.0dip" android:checked="false" style="@style/tab_left" />
+        <CheckBox android:enabled="false" android:clickable="false" android:layout_margin="1.0dip" android:checked="false" style="@style/tab_left" />
+    </LinearLayout>
+</LinearLayout>

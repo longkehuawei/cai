@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_bisai_txt" android:background="@color/linear_back_jc" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_back_open" android:background="@color/linear_back_jc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="15.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/linear_showlist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/tv_bisai_text1" android:id="@id/tv_league" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="澳洲杯啊" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/tv_bisai_text1" android:id="@id/tv_matchday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周四001" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/tv_bisai_text1" android:id="@id/tv_jiezhi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:01截止" />
+                <ImageView android:id="@id/iv_showzhankai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/qiusai_down" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linear_hhgg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/tv_bisai_text2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="让球" android:ems="1" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="210.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:id="@id/tv_bisai_kedui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="皇马" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="VS" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:id="@id/tv_bisai_zhudui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="曼联" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip">
+                        <TextView android:textSize="10.0sp" android:textColor="@color/tv_jclq_burangfen_text" android:gravity="center" android:background="@color/tv_jclq_burangfen" android:layout_width="15.0dip" android:layout_height="40.0dip" android:text="非让分" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/tv_jclq_rangfen_text" android:gravity="center" android:id="@id/tv_rangqiushu" android:background="@color/tv_jclq_rangfen" android:layout_width="15.0dip" android:layout_height="40.0dip" android:text="让分" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <CheckBox android:textSize="14.0sp" android:gravity="center" android:id="@id/check_zhu_sheng" android:background="@drawable/jc_checkbox_selected" android:layout_width="105.0dip" android:layout_height="40.0dip" android:button="@null" android:text="主胜1.27" />
+                            <CheckBox android:textSize="14.0sp" android:gravity="center" android:id="@id/check_zhu_fu" android:background="@drawable/jc_checkbox_selected" android:layout_width="105.0dip" android:layout_height="40.0dip" android:button="@null" android:text="客胜1.27" />
+                            <CheckBox android:textSize="14.0sp" android:textColor="@color/tv_bisai_text2" android:gravity="center" android:id="@id/check_zhu_weikaishou" android:background="@drawable/jc_checkbox_selected" android:visibility="gone" android:clickable="false" android:layout_width="210.0dip" android:layout_height="40.0dip" android:button="@null" android:text="未开售" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <CheckBox android:textSize="14.0sp" android:gravity="center" android:id="@id/check_rq_sheng" android:background="@drawable/jc_checkbox_selected" android:layout_width="105.0dip" android:layout_height="40.0dip" android:button="@null" android:text="胜1.27" />
+                            <CheckBox android:textSize="14.0sp" android:gravity="center" android:id="@id/check_rq_fu" android:background="@drawable/jc_checkbox_selected" android:layout_width="105.0dip" android:layout_height="40.0dip" android:button="@null" android:text="客胜1.27" />
+                            <CheckBox android:textSize="14.0sp" android:textColor="@color/tv_bisai_text2" android:gravity="center" android:id="@id/check_rq_weikaishou" android:background="@drawable/jc_checkbox_selected" android:visibility="gone" android:clickable="false" android:layout_width="210.0dip" android:layout_height="40.0dip" android:button="@null" android:text="未开售" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/tv_bisai_text1" android:gravity="center" android:id="@id/tv_showall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="展开全部" android:maxEms="2" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_spf" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="6.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="210.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[客]" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:id="@id/tv_bisai_kedui2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="皇马" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:id="@id/tv_tp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="VS" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:id="@id/tv_bisai_zhudui2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="曼联" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/lin_showspf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:id="@id/tv_rqspf2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.5" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=")" />
+                    </LinearLayout>
+                    <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:id="@id/tv_rqspf_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[主]" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <CheckBox android:textSize="14.0sp" android:textColor="@drawable/button_font_qiusai_style" android:gravity="center" android:id="@id/check_spf_ke" android:background="@drawable/jc_checkbox_selected" android:layout_width="120.0dip" android:layout_height="40.0dip" android:button="@null" android:text="客胜1.27" />
+                    <CheckBox android:textSize="14.0sp" android:textColor="@drawable/button_font_qiusai_style" android:gravity="center" android:id="@id/check_spf_zhu" android:background="@drawable/jc_checkbox_selected" android:layout_width="120.0dip" android:layout_height="40.0dip" android:button="@null" android:text="主胜1.27" />
+                    <CheckBox android:textSize="14.0sp" android:textColor="@color/tv_bisai_text2" android:gravity="center" android:id="@id/check_spf_weikaishou" android:background="@drawable/jc_checkbox_selected" android:visibility="gone" android:clickable="false" android:layout_width="240.0dip" android:layout_height="40.0dip" android:button="@null" android:text="未开售" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_bf" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="6.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="210.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:id="@id/tv_bf_kedui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="曼联" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="VS" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:id="@id/tv_bf_zhudui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="皇马" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <Button android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:gravity="center" android:id="@id/check_bf_xuanze" android:background="@drawable/jc_back_normal" android:layout_width="240.0dip" android:layout_height="40.0dip" android:text="点击选择比分" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_erxuanyi" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="6.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <CheckBox android:textSize="13.0sp" android:textColor="@drawable/button_font_qiusai_style" android:gravity="center" android:id="@id/check_erxuanyi_zhu" android:background="@drawable/jc_checkbox_selected" android:layout_width="120.0dip" android:layout_height="60.0dip" android:button="@null" android:text="主胜1.27" />
+                    <CheckBox android:textSize="13.0sp" android:textColor="@drawable/button_font_qiusai_style" android:gravity="center" android:id="@id/check_erxuanyi_fu" android:background="@drawable/jc_checkbox_selected_left" android:layout_width="120.0dip" android:layout_height="60.0dip" android:button="@null" android:text="客胜1.27" />
+                    <CheckBox android:textSize="14.0sp" android:textColor="@color/tv_bisai_text2" android:gravity="center" android:id="@id/check_erxuanyi_weikaishou" android:background="@drawable/jc_checkbox_selected" android:visibility="gone" android:clickable="false" android:layout_width="240.0dip" android:layout_height="60.0dip" android:button="@null" android:text="未开售" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_zjq" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="6.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="210.0dip" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:id="@id/tv_zjq_zhudui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="曼联" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="VS" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/fanan_text_color" android:layout_gravity="center" android:id="@id/tv_zjq_kedui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="皇马" />
+                </LinearLayout>
+                <CheckBox android:textSize="14.0sp" android:textColor="@color/tv_bisai_text2" android:gravity="center" android:id="@id/check_weikaishou_zjq" android:background="@drawable/jc_checkbox_selected" android:visibility="gone" android:clickable="false" android:layout_width="240.0dip" android:layout_height="60.0dip" android:layout_marginTop="10.0dip" android:button="@null" android:text="未开售" />
+                <LinearLayout android:orientation="vertical" android:id="@id/linear_zjqall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="12.0sp" android:textColor="@drawable/button_font_qiusai_style" android:gravity="center" android:id="@id/check_zjq_0" android:background="@drawable/jc_checkbox_selected" android:layout_width="60.0dip" android:layout_height="30.0dip" android:button="@null" android:text="0 1.00" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="@drawable/button_font_qiusai_style" android:gravity="center" android:id="@id/check_zjq_1" android:background="@drawable/jc_checkbox_selected_left" android:layout_width="60.0dip" android:layout_height="30.0dip" android:button="@null" android:text="1  1.00" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="@drawable/button_font_qiusai_style" android:gravity="center" android:id="@id/check_zjq_2" android:background="@drawable/jc_checkbox_selected_mid" android:layout_width="60.0dip" android:layout_height="30.0dip" android:button="@null" android:text="1 1.00" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="@drawable/button_font_qiusai_style" android:gravity="center" android:id="@id/check_zjq_3" android:background="@drawable/jc_checkbox_selected" android:layout_width="60.0dip" android:layout_height="30.0dip" android:button="@null" android:text="1  1.00" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="12.0sp" android:textColor="@drawable/button_font_qiusai_style" android:gravity="center" android:id="@id/check_zjq_4" android:background="@drawable/jc_checkbox_selected" android:layout_width="60.0dip" android:layout_height="30.0dip" android:button="@null" android:text="0  1.00" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="@drawable/button_font_qiusai_style" android:gravity="center" android:id="@id/check_zjq_5" android:background="@drawable/jc_checkbox_selected_left" android:layout_width="60.0dip" android:layout_height="30.0dip" android:button="@null" android:text="1  1.00" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="@drawable/button_font_qiusai_style" android:gravity="center" android:id="@id/check_zjq_6" android:background="@drawable/jc_checkbox_selected_mid" android:layout_width="60.0dip" android:layout_height="30.0dip" android:button="@null" android:text="1  1.00" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="@drawable/button_font_qiusai_style" android:gravity="center" android:id="@id/check_zjq_7" android:background="@drawable/jc_checkbox_selected" android:layout_width="60.0dip" android:layout_height="30.0dip" android:button="@null" android:text="1  1.00" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_lishi" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/fanan_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="历史交锋" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/tv_bisai_text1" android:id="@id/tv_lishijiaofeng" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:text="近五次交战，海登海姆" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/tv_miaoshu_red1" android:id="@id/tv_miaoshu_win" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2胜" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/tv_miaoshu_blue1" android:id="@id/tv_miaoshu_shu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3负" />
+        </LinearLayout>
+        <View android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/fanan_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="近期战绩" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/tv_bisai_text1" android:id="@id/tv_jinqizhanji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:text="主队4胜2平4负，客队5胜2平3负" />
+        </LinearLayout>
+        <View android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="120.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+            <ImageView android:textColor="@color/fanan_text_color" android:background="@drawable/xiangxi_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/tv_bisai_text1" android:id="@id/tv_game_analysis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="详细赛事分析    > " />
+        </LinearLayout>
+        <View android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

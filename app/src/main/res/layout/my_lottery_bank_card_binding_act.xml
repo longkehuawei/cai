@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/share_toolbarbg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageButton android:id="@id/bank_card_binding_act_btn_goBack" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="40.0dip" android:layout_height="31.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/cst_btn_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/cst_title_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="绑定银行卡" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="开户银行：" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+            <EditText android:textColorHint="@color/login_text_hint" android:id="@id/registact_edt_userPass" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="" android:inputType="text" />
+        </FrameLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="账号/卡号：" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+            <EditText android:textColorHint="@color/login_text_hint" android:id="@id/registact_edt_userPhone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="" android:inputType="number" />
+        </FrameLayout>
+        <Button android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/cst_color_white" android:layout_gravity="center_horizontal" android:id="@id/my_lottery_bank_card_submit" android:background="@drawable/btn_cst_background_style" android:layout_width="160.0dip" android:layout_height="40.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" android:text="立即绑定" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提示：" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="为确保账户安全，银行卡填写后不允许自行修改，如需修改，请联系24小时免费客服" android:lineSpacingExtra="6.0dip" />
+    </LinearLayout>
+</LinearLayout>

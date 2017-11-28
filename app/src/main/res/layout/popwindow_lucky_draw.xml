@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff31cde9" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/choujiang_record" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/order" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="抽奖记录" />
+    </LinearLayout>
+    <View android:background="@color/divideColor" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/choujiang_introduction" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/lucky_draw_info" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="玩法介绍" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rechargeszx_relative_main" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/accountdetail_act_group_frame_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/share_toolbarbg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+                <ImageButton android:id="@id/recharge_szx_btn_goBack" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="40.0dip" android:layout_height="31.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/cst_btn_back" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0dip" android:textColor="@color/cst_title_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="话费卡充值" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </FrameLayout>
+        <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                <RadioGroup android:orientation="horizontal" android:id="@id/myinfo_act_third_rbgoup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="8.0dip">
+                    <RadioButton android:textColor="@drawable/rb_myinfo_shwotype_txt_style" android:gravity="center" android:id="@id/recharge_szx_act_yidong_radio" android:background="@drawable/btn_cst_recharge_yidong_style" android:paddingLeft="5.0dip" android:layout_width="90.0dip" android:layout_height="30.0dip" android:checked="true" android:button="@null" />
+                    <RadioButton android:textColor="@drawable/rb_myinfo_shwotype_txt_style" android:gravity="center" android:id="@id/recharge_szx_act_liantong_radio" android:background="@drawable/btn_cst_recharge_liantong_style" android:paddingLeft="5.0dip" android:layout_width="90.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:button="@null" />
+                </RadioGroup>
+                <LinearLayout android:orientation="vertical" android:id="@id/rechargeszx_linear_main" android:background="@drawable/bg_pressed_myinformation_bg_608x651" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <TextView android:textSize="14.0dip" android:textColor="@color/common_txt" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="充值卡面额" android:layout_weight="1.0" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip">
+                            <SeekBar android:id="@id/recharge_szx_seek_price" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="186.0dip" android:layout_height="wrap_content" android:maxHeight="5.0dip" android:max="2" android:progress="1" android:progressDrawable="@drawable/seekbar_style" android:thumb="@drawable/seekbar_btn_style" android:layout_weight="1.0" />
+                            <LinearLayout android:orientation="horizontal" android:layout_width="186.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textColor="@color/common_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="30" android:layout_weight="1.0" />
+                                <TextView android:textColor="@color/common_txt" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="50" android:layout_weight="1.0" />
+                                <TextView android:textColor="@color/common_txt" android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="100" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0dip" android:textColor="@color/common_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您选择的是" />
+                            <TextView android:textSize="14.0dip" android:textColor="#ffba0000" android:id="@id/recharge_szx_tv_cardPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50" />
+                            <TextView android:textSize="14.0dip" android:textColor="@color/common_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元卡,实际到账" />
+                            <TextView android:textSize="14.0dip" android:textColor="#ffba0000" android:id="@id/recharge_szx_tv_realMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="46.0" />
+                            <TextView android:textSize="14.0dip" android:textColor="@color/common_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:background="@drawable/cst_line_449x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                            <TextView android:textSize="14.0dip" android:textColor="@color/common_txt" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="充值卡列号：" android:layout_centerVertical="true" />
+                            <FrameLayout android:paddingTop="5.0dip" android:layout_width="182.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                                <EditText android:textColor="@color/common_txt" android:textColorHint="@color/login_text_hint" android:id="@id/recharge_szx_et_cardNum" android:layout_width="fill_parent" android:layout_height="40.0dip" android:scrollHorizontally="true" android:inputType="number">
+                                    <requestFocus />
+                                </EditText>
+                            </FrameLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                            <TextView android:textSize="14.0dip" android:textColor="@color/common_txt" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="充值卡密码：" android:layout_centerVertical="true" />
+                            <FrameLayout android:paddingTop="5.0dip" android:layout_width="182.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                                <EditText android:textColor="@color/common_txt" android:textColorHint="@color/login_text_hint" android:id="@id/recharge_szx_et_cardPwd" android:layout_width="fill_parent" android:layout_height="40.0dip" android:scrollHorizontally="true" android:inputType="number" />
+                            </FrameLayout>
+                        </RelativeLayout>
+                        <Button android:textSize="20.0dip" android:textColor="@color/cst_color_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/recharge_szx_btn_submit" android:background="@drawable/btn_cst_background_style" android:layout_width="140.0dip" android:layout_height="37.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="立即充值" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/rechargeszx_linear_main_trip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip">
+                    <TextView android:textColor="@color/cst_color_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="温馨提示：" />
+                    <TextView android:textColor="@color/cst_color_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1.中国移动充值卡充值方式支持移动全国通用的神州行充值卡，广州、江苏、浙江、辽宁、福建地方卡（辽宁福建地方卡仅支持50和100元的充值卡）。中国联通充值卡充值方式支持全国通用的联通一卡充。" android:lineSpacingExtra="4.0dip" />
+                    <TextView android:textColor="@color/cst_color_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2.充值卡内金额将一次性全额扣除，请选择与您的充值卡面额相同的金额。如果您选择的充值金额与您充值卡实际面额不一致，将无法给您退还差额或损失部分。" android:lineSpacingExtra="4.0dip" />
+                    <TextView android:textColor="@color/cst_color_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="3.充值卡充值服务商将收取充值卡面额3%的服务费，在充值卡金额中直接扣除。" android:lineSpacingExtra="4.0dip" />
+                    <TextView android:textColor="@color/cst_color_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="4.移动充值卡充值将在2分钟之内处理完成，请您在2分钟后查询账户。联通卡充值将在5分钟之内处理完成，请您在3分钟后查询账户。" android:lineSpacingExtra="4.0dip" />
+                    <TextView android:textColor="@color/cst_color_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="5.由于每日结算需要，本充值方式每日23:30至次日00:15暂停使用。" android:lineSpacingExtra="4.0dip" />
+                    <Button android:id="@id/rch_l_btn_cancel1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="vw_rch_test1" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false" android:drawable="@drawable/cst_icon_volume_19x22" />
+    <item android:state_selected="true" android:drawable="@drawable/cst_icon_volume_focused_68x47" />
+</selector>

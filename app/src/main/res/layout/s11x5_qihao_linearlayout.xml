@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/cst_color_kaijiang" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/cst_color_black" android:id="@id/tv_issue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/cst_color_red" android:id="@id/tv_winnumber1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/cst_color_black" android:id="@id/tv_winnumber2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/cst_color_black" android:id="@id/tv_daxiaobitext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="3:2" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/cst_color_black" android:id="@id/tv_qioubitext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:text="3:2" />
+</LinearLayout>

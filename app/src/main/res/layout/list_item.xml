@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="100.0dip" android:layout_height="110.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/red" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_wanfa" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="江西时时彩" android:layout_centerHorizontal="true" />
+           <!-- <com.ui.main.acts.hemai.TasksCompletedView android:id="@id/tasks_view" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="35.0dip" app:radius="21.0dip" app:strokeWidth="8.0dip" app:circleColor="#ffc4c4c4" app:ringColorRed="#ffd41833" app:ringColorYellow="#ffffc12b" />-->
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/touming2" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/tv_rengou" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/hemai_gold" android:gravity="center" android:id="@id/tv_baodi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/hemai_t5" android:drawablePadding="2.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:background="@drawable/hemai_t4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="1.0dip" />
+                <com.ui.main.view.CircleImageView android:id="@id/user_head" android:background="@drawable/userinfoa" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="1.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/hemai_user_gold" android:gravity="bottom" android:id="@id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_user_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/hemai_text1" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总金额" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/touming2" android:layout_gravity="center_horizontal" android:id="@id/tv_totalmoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="99份" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/hemai_text1" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="每份" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/touming2" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="1元" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/hemai_text1" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="剩余" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/touming2" android:layout_gravity="center_horizontal" android:id="@id/tv_lastmoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="99份" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="top" android:background="@drawable/my_lottery_right" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

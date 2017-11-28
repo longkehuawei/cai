@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/my_lottery_cg_record_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:id="@id/LinearLayout03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_account_detail_time_txt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="70.0dip" android:layout_marginRight="5.0dip" android:text="2012-01-05" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_account_detail_buyTime_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20:30" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/my_lottery_account_detail_add_or_reduce" android:background="@drawable/tupian_jianshao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/itemHeaderLinearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_account_detail_caipiaoType" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="收支类型：" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_account_detail_caipiaoType_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="--" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_account_detail_transactionType" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="交易类型：" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/cst_color_gray" android:ellipsize="end" android:id="@id/my_lottery_account_detail_transactionType_txt" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="奖金派送" android:lines="3" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_account_detail_spendMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="交易金额：" />
+                            <ImageView android:layout_gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/my_lottery_account_detail_reduce" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_account_detail_spendMoney_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="¥2.00" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_account_detail_ownerMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="余额：" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_account_detail_ownerMoney_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="¥200.00" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/red" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_imageMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="+200" />
+        </LinearLayout>
+        <View android:background="@color/color_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

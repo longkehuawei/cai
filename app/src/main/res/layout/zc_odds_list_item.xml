@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:id="@id/tv_company_name" android:background="@drawable/odds_item_border_full_line" android:layout_width="60.0dip" android:layout_height="40.0dip" android:text="公司" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/odds_item_border_full_line" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="6.0">
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:id="@id/tv_odds_win" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="胜" android:layout_weight="2.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:id="@id/tv_odds_flat" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="平" android:layout_weight="2.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:id="@id/tv_odds_lost" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="负" android:layout_weight="2.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/odds_item_border_full_line" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="6.0">
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:id="@id/tv_kaili_win" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="胜" android:layout_weight="2.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:id="@id/tv_kaili_flat" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="平" android:layout_weight="2.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:id="@id/tv_kaili_lost" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="负" android:layout_weight="2.0" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:id="@id/tv_return_integrate" android:background="@drawable/odds_item_border_full_line" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="返还率" />
+</LinearLayout>

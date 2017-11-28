@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/accountdetail_act_group_frame_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageButton android:id="@id/accountdetail_act_group_btn_back" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" android:src="@drawable/lin2" android:layout_toRightOf="@id/accountdetail_act_group_btn_back" android:contentDescription="@drawable/icon" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/white" android:id="@id/accountdetail_act_group_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="交易明细" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:background="@drawable/radio_bar_bg" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textColor="@drawable/cst_text_color_change" android:gravity="center" android:id="@id/accountdetail_act_group_rb_all" android:background="@drawable/cst_gcjl_left_style" android:layout_width="fill_parent" android:layout_height="34.0dip" android:checked="true" android:button="@null" android:text="全部" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@drawable/cst_text_color_change" android:gravity="center" android:id="@id/accountdetail_act_group_rb_lottery" android:background="@drawable/cst_gcjl_mid_style" android:layout_width="fill_parent" android:layout_height="34.0dip" android:button="@null" android:text="购彩" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@drawable/cst_text_color_change" android:gravity="center" android:id="@id/accountdetail_act_group_rb_charge" android:background="@drawable/cst_gcjl_mid_style" android:layout_width="fill_parent" android:layout_height="34.0dip" android:button="@null" android:text="充值" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@drawable/cst_text_color_change" android:gravity="center" android:id="@id/accountdetail_act_group_rb_award" android:background="@drawable/cst_gcjl_mid_style" android:layout_width="fill_parent" android:layout_height="34.0dip" android:button="@null" android:text="派奖" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@drawable/cst_text_color_change" android:gravity="center" android:id="@id/accountdetail_act_group_rb_withdrawal" android:background="@drawable/cst_gcjl_right_style" android:layout_width="fill_parent" android:layout_height="34.0dip" android:button="@null" android:text="提款" android:layout_weight="1.0" />
+        </RadioGroup>
+    </LinearLayout>
+    <com.ui.main.pull.PullListView android:id="@id/pull_down_view" android:background="@color/yellow_slide" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

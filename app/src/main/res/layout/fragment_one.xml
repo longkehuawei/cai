@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ui.main.xlist.XListView android:id="@id/xListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/divideColor" android:dividerHeight="1.0dip" />
+        <include android:id="@id/ll_add_in" layout="@layout/add_in" />
+        <include android:id="@id/hemai_loading_fail" layout="@layout/loading_fail" />
+        <TextView android:textSize="20.0dip" android:textColor="@color/cst_lottery_other" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="没有合买信息" android:layout_centerInParent="true" />
+    </FrameLayout>
+</LinearLayout>

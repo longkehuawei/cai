@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="false" android:state_enabled="true" android:drawable="@drawable/login_edittext_default_22x34" />
+    <item android:state_focused="true" android:state_enabled="true" android:drawable="@drawable/login_edittext_focused_23x34" />
+    <item android:state_enabled="false" android:drawable="@drawable/hmxq_input_useless_50x25_" />
+</selector>

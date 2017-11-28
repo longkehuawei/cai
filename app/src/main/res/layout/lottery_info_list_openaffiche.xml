@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/lottery_info_list_openaffiche_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:gravity="center_horizontal" android:id="@id/lottery_info_query_openaffiche" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="一等奖" android:layout_weight="0.8" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:gravity="center_horizontal" android:id="@id/lottery_info_query_openaffiche_zs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="7" android:layout_weight="1.0" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:gravity="center_horizontal" android:id="@id/lottery_info_query_openaffiche_jj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="85123690" android:layout_weight="0.8" />
+</LinearLayout>

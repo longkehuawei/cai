@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/choosenormalbuyact_linear_botttomUp" android:layout_alignParentTop="true">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/share_toolbarbg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+                    <ImageButton android:id="@id/btn_set_beitou_buy_goBack" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="40.0dip" android:layout_height="31.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/cst_btn_back" android:layout_centerVertical="true" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/cst_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购买" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/chooseactlist_linear_listSpace" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_margin="6.0dip">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="倍投" />
+                            <ImageButton android:id="@id/choosenormalbuyact_btn_multipleReduce" android:background="@drawable/btn_decrease_style" android:layout_width="40.0dip" android:layout_height="34.0dip" android:src="@drawable/btn_decrease_src_style" />
+                            <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_red" android:gravity="center" android:id="@id/choosenormalbuyact_tv_multiple" android:background="@drawable/inputbox_93x34" android:layout_width="92.0dip" android:layout_height="fill_parent" android:hint="1" />
+                            <ImageButton android:id="@id/choosenormalbuyact_btn_multipleAdd" android:background="@drawable/btn_increase_style" android:layout_width="40.0dip" android:layout_height="34.0dip" android:src="@drawable/btn_increase_src_style" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="倍" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_margin="6.0dip">
+                            <SeekBar android:id="@id/seekBar1" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="98" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_margin="6.0dip">
+                            <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="追号" />
+                            <ImageButton android:id="@id/choosenormalbuyact_btn_followReduce" android:background="@drawable/btn_decrease_style" android:layout_width="40.0dip" android:layout_height="34.0dip" android:src="@drawable/btn_decrease_src_style" />
+                            <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/choosenormalbuyact_tv_follow" android:background="@drawable/inputbox_93x34" android:layout_width="92.0dip" android:layout_height="fill_parent" android:hint="1" />
+                            <ImageButton android:id="@id/choosenormalbuyact_btn_followAdd" android:background="@drawable/btn_increase_style" android:layout_width="40.0dip" android:layout_height="34.0dip" android:src="@drawable/btn_increase_src_style" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="期" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <CheckBox android:textColor="@color/cst_color_black" android:id="@id/choosenormalbuyact_cbx_isStop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中奖后停止追号" />
+                            <CheckBox android:textColor="@color/cst_color_black" android:id="@id/choosenormalbuyact_cbx_isZhuijia" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="追加投注" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+                <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/choosenormalbuyact_linear_botttomUp" android:background="@drawable/buy_bottom_bg_320x96_" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0dip" android:textColor="@color/text_choose_main" android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="投注金额:" android:layout_weight="1.0" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0dip" android:textColor="@color/text_choose_main" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" />
+                            <TextView android:textSize="16.0dip" android:textColor="@color/text_choose_money" android:gravity="center" android:id="@id/choosenormalbuyact_tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0dip" android:textColor="@color/text_choose_main" android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="追号金额:" android:layout_weight="1.0" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="16.0dip" android:textColor="@color/text_choose_money" android:gravity="center" android:id="@id/choosenormalbuyact_tv_trackingMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                            <TextView android:textSize="14.0dip" android:textColor="@color/text_choose_main" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0dip" android:textColor="@color/text_choose_main" android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="投注后账户余额:" android:layout_weight="1.0" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0dip" android:textColor="@color/text_choose_main" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" />
+                            <TextView android:textSize="16.0dip" android:textColor="@color/text_choose_money" android:gravity="center" android:id="@id/choosenormalbuyact_tv_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/registact_linear_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="45.0dip">
+                        <Button android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/cst_color_white" android:id="@id/btn_buy_now" android:background="@drawable/btn_cst_background_style" android:layout_width="140.0dip" android:layout_height="40.0dip" android:text="立即购买" android:layout_weight="1.0" />
+                        <Button android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/cst_color_white" android:id="@id/btn_cancel" android:background="@drawable/btn_cst_background_style" android:layout_width="140.0dip" android:layout_height="40.0dip" android:text="取消" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageButton android:id="@id/withdraw_act_btn_goBack" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" android:src="@drawable/lin2" android:layout_toRightOf="@id/withdraw_act_btn_goBack" android:contentDescription="@drawable/icon" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="提款" android:layout_centerInParent="true" />
+            <ImageButton android:id="@id/withdraw_act_btn_feeTip" android:background="@drawable/btn_withdrawal_trip_style" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <ScrollView android:background="@color/yellow_slide" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/set_bg_22x28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textColor="@color/cst_color_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前可提款金额：" />
+                    <TextView android:textColor="@color/solid_red" android:layout_gravity="center_vertical" android:id="@id/withdrawal_act_tv_avaliableMoney" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="000.00" />
+                    <TextView android:textColor="@color/cst_color_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textColor="@color/cst_color_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投注任务" />
+                    <TextView android:textColor="@color/solid_red" android:layout_gravity="center_vertical" android:id="@id/withdrawal_act_tv_touzhuRW" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="000.00" />
+                    <TextView android:textColor="@color/cst_color_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+                </LinearLayout>
+                <ImageView android:background="@drawable/cst_line_449x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                    <TextView android:textColor="@color/cst_color_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提现金额：" />
+                    <FrameLayout android:layout_gravity="center_vertical" android:paddingTop="5.0dip" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <EditText android:textColor="@color/common_txt" android:textColorHint="@color/login_text_hint" android:id="@id/withdrawal_act_money" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:maxLength="10" android:inputType="number" />
+                    </FrameLayout>
+                    <TextView android:textColor="@color/cst_color_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+                </LinearLayout>
+                <ImageView android:background="@drawable/cst_line_449x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textColor="@color/cst_color_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录密码：" />
+                    <FrameLayout android:layout_gravity="center_vertical" android:paddingTop="5.0dip" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <EditText android:textColor="@color/common_txt" android:textColorHint="@color/login_text_hint" android:id="@id/withdrawal_act_login_pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:maxLength="15" android:inputType="textPassword" />
+                    </FrameLayout>
+                </LinearLayout>
+                <ImageView android:background="@drawable/cst_line_449x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            </LinearLayout>
+            <Button android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/withdrawal_act_btn_submit" android:background="@drawable/my_lottery_btn_bg" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="提交" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/myinfo_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="提款须知：" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/myinfo_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="1.提手续费全免，每日限提款3次。\n  2.每日22:00之前申请提款财务在当日处理，22:00之后申请提款财务次日9:30处理。\n  3.每笔提款申请，最低提款金额为100元，最高无限制；当您的账户资金低于100元时，则无法进行提款！\n  4.如果提现银行卡信息有误将会导致提现不成功；提现不成功后提现金额将立即退回大吉利账户。 若因个人原因填错他人银行卡信息及真实姓名提现转出成功，将无法退还！\n  5.提款支持所有银行储蓄卡，不支持提现到信用卡及第三方支付（如支付宝、财付通等）\n  6.为防止极少数用户利用信用卡套现和洗钱行为，保护正常用户的资金安全，本站规定用户其当前充值金额消费至少满50%后才能正常提款.\n  7.提现预计到帐时间： 在银行处理无任何意外的情况， 提现提交后10分钟内到账。若您的提款30分钟未到账，请及时联系在线客服 " />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

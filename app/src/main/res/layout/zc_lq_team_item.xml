@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/game_bold_text" android:id="@id/host_outcomes" android:background="@color/color_gray" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_title_container" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_common_text" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="排名" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_common_text" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="胜" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_common_text" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="负" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_common_text" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="胜率" android:layout_weight="2.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/game_common_text" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="连胜连负" android:layout_weight="2.0" />
+    </LinearLayout>
+</LinearLayout>

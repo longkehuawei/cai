@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/tab_content" android:background="#77557799" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bottom_main_background" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/tabs_rg" android:focusableInTouchMode="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:checkedButton="@id/tab_rb_a" android:layout_weight="4.0">
+                <RadioButton android:gravity="center" android:id="@id/tab_rb_a" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@drawable/m_btn_background_icon" android:drawableTop="@drawable/m_btn_lottery_style" android:layout_weight="1.0" />
+                <RadioButton android:id="@id/tab_rb_b" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@drawable/m_btn_background_icon" android:drawableTop="@drawable/m_btn_option_style" android:layout_weight="1.0" />
+                <RadioButton android:id="@id/tab_rb_e" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@drawable/m_btn_background_icon" android:drawableTop="@drawable/m_btn_show_style" android:layout_weight="1.0" />
+                <RadioButton android:id="@id/tab_rb_c" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@drawable/m_btn_background_icon" android:drawableTop="@drawable/m_btn_history_style" android:layout_weight="1.0" />
+                <RadioButton android:id="@id/tab_rb_d" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@drawable/m_btn_background_icon" android:drawableTop="@drawable/m_btn_recharge_style" android:layout_weight="1.0" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

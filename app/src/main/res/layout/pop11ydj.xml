@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:gravity="center" android:id="@id/tv_title_bar_zx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="普通" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:gravity="center" android:id="@id/tv_title_bar_z3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="胆拖" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

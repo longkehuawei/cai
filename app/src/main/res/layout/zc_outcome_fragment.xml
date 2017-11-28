@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_background" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/rl_history" android:background="@drawable/border_full_line" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <Button android:textColor="@color/game_common_text" android:id="@id/btn_history" android:background="@drawable/btn_cancle_shape" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="筛" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:id="@id/tv_history" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="历史战绩" android:layout_weight="4.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_history_hide" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/hemai_n2" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_histroy_list" android:background="@drawable/border_full_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rl_recent" android:background="@drawable/border_full_line" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <Button android:textColor="@color/game_common_text" android:id="@id/btn_recent" android:background="@drawable/btn_cancle_shape" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="筛" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="近期战绩" android:layout_weight="4.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_recent_hide" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/hemai_n2" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_recent_list" android:background="@drawable/border_full_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rl_future" android:background="@drawable/border_full_line" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <Button android:textColor="@color/game_common_text" android:id="@id/btn_future" android:background="@drawable/btn_cancle_shape" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="筛" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/game_bold_text" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="未来赛事" android:layout_weight="4.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_future_hide" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/hemai_n2" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_future_list" android:background="@drawable/border_full_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

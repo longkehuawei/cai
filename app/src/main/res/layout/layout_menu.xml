@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/biz_news_local_weather_bg_big" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/tvToday" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="今日" android:drawablePadding="1.0dip" />
+    <View android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/tvLastlist" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="往期列表" android:drawablePadding="1.0dip" />
+    <View android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/tvDiscussMeeting" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="讨论集会" android:drawablePadding="1.0dip" />
+    <View android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/tvMyFavorites" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="我的收藏" android:drawablePadding="1.0dip" />
+    <View android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/tvMyComments" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="我的评论" android:drawablePadding="1.0dip" />
+    <View android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/tvMySettings" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="设置" android:drawablePadding="1.0dip" />
+    <View android:layout_width="fill_parent" android:layout_height="2.0dip" />
+</LinearLayout>

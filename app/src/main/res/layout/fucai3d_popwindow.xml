@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_main" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <CheckBox android:id="@id/b1" android:layout_margin="1.0dip" android:checked="true" android:text="3D直选" style="@style/tab_left" />
+        <CheckBox android:id="@id/b2" android:layout_margin="1.0dip" android:text="组三" style="@style/tab_left" />
+        <CheckBox android:id="@id/b3" android:layout_margin="1.0dip" android:text="组六" style="@style/tab_left" />
+    </LinearLayout>
+</LinearLayout>

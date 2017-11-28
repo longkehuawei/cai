@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/yellow_slide" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/tittle_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/chooseact_linear_bottomUp" android:background="@drawable/bottom_background" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="16.0dip" android:textColor="@color/red" android:layout_gravity="center" android:id="@id/chooseact_btn_clean" android:background="@drawable/cst_gcjl_mid_style" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_marginLeft="16.0dip" android:text="清空" />
+        <Button android:enabled="false" android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/chooseact_btn_random" android:background="@drawable/cst_gcjl_mid_style" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="@color/cst_money_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/red" android:gravity="center" android:id="@id/chooseact_tv_betNum" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/cst_money_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注," />
+            <TextView android:textSize="16.0dip" android:textColor="@color/red" android:gravity="center" android:id="@id/chooseact_tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/cst_money_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/chooseact_btn_submit" android:background="@drawable/cst_gcjl_mid_style_2" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="10.0dip" android:text="确定" />
+    </LinearLayout>
+    <ScrollView android:id="@id/chooseact_scroll_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/chooseact_linear_bottomUp" android:layout_below="@id/tittle_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="1800.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/cst_color_red" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/cst_gsensor_trip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="vertical" android:paddingTop="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/chooseact_Linear_ballMenuRed" android:paddingLeft="28.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <RelativeLayout android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/text_choose_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="第一位(可选1-10个) 单注奖金185元" />
+                        <Button android:textSize="11.0sp" android:textColor="@color/cst_color_black" android:background="@drawable/yilou_back" android:layout_width="35.0dip" android:layout_height="21.0dip" android:layout_marginTop="53.0dip" android:text="遗漏" />
+                    </LinearLayout>
+                    <Button android:textSize="13.0dip" android:textColor="#ffefd8d8" android:gravity="center" android:id="@id/chooseact_btn_redRandom" android:background="@drawable/btn_lotterychoose_pagerandom_red_style" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="25.0dip" android:layout_marginRight="12.0dip" android:text="机选前区" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <Button android:textSize="16.0dip" android:textColor="@drawable/balltext_color_style_2" android:layout_gravity="right" android:id="@id/btn_red_allchoose" android:background="@drawable/quanxuan_btn_style" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="40.0dip" android:text="全选" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="vertical" android:paddingTop="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/chooseact_Linear_ballMenuBlue" android:paddingLeft="28.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <RelativeLayout android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/text_choose_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第二位(可选1-10个)" />
+                        <Button android:textSize="11.0sp" android:textColor="@color/cst_color_black" android:background="@drawable/yilou_back" android:layout_width="35.0dip" android:layout_height="21.0dip" android:layout_marginTop="55.0dip" android:text="遗漏" />
+                    </LinearLayout>
+                    <Button android:textSize="13.0dip" android:textColor="#ffd2e4f6" android:gravity="center" android:id="@id/chooseact_btn_blueRandom" android:background="@drawable/btn_lotterychoose_pagerandom_blue_style" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="25.0dip" android:layout_marginRight="12.0dip" android:text="机选后区" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <Button android:textSize="16.0dip" android:textColor="@drawable/balltext_color_style_2" android:layout_gravity="right" android:id="@id/btn_blue_allchoose" android:background="@drawable/quanxuan_btn_style" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="40.0dip" android:text="全选" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

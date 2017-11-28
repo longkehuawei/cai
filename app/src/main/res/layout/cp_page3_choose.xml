@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/cst_color_red" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0dip" android:textColor="@color/cst_color_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第201209期  还剩余10分10秒" />
+        </LinearLayout>
+        <ImageView android:gravity="right" android:background="@drawable/array" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/cp_page_2" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/cp_page_tv_zhixuan" android:background="@drawable/left_btn_style" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="直选" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/cp_page_tv_zhuxuan" android:background="@drawable/left_btn_style" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="组选" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/cp_page_tv_dantuo" android:background="@drawable/right_btn_style" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="组选胆拖" android:layout_weight="1.0" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/vPager" android:background="#ff000000" android:persistentDrawingCache="animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:flipInterval="30" android:layout_weight="1.0" />
+</LinearLayout>

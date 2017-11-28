@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/lotteryrecord_agp_frame_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/share_toolbarbg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageButton android:id="@id/lottery_zh_record_act_btn_back" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="40.0dip" android:layout_height="31.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/cst_btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/cst_title_color" android:id="@id/lotteryinfolist_agp_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="追号记录" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <TabHost android:id="@id/lotteryrecord_agp_tabhost" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="@color/main_background" android:paddingTop="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@android:id/tabcontent" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TabWidget android:gravity="center" android:id="@android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </TabHost>
+    <LinearLayout android:gravity="center" android:background="@drawable/radio_bar_bg" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textColor="@drawable/cst_text_color_change" android:gravity="center" android:id="@id/lotteryrecord_agp_rb_all" android:background="@drawable/cst_gcjl_left_style" android:layout_width="fill_parent" android:layout_height="34.0dip" android:checked="true" android:button="@null" android:text="全部" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@drawable/cst_text_color_change" android:gravity="center" android:id="@id/lotteryrecord_agp_rb_shuangSeQiu" android:background="@drawable/cst_gcjl_mid_style" android:layout_width="fill_parent" android:layout_height="34.0dip" android:button="@null" android:text="双色球" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@drawable/cst_text_color_change" android:gravity="center" android:id="@id/lotteryrecord_agp_rb_daLeTou" android:background="@drawable/cst_gcjl_mid_style" android:layout_width="fill_parent" android:layout_height="34.0dip" android:button="@null" android:text="大乐透" android:layout_weight="1.0" />
+        </RadioGroup>
+    </LinearLayout>
+    <ListView android:id="@id/list_item" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@color/main_background" android:dividerHeight="1.0dip" />
+</LinearLayout>

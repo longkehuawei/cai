@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/yellow_slide" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/cppl5_tittle_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <ImageButton android:id="@id/cppl5_lotteryhall_act_btn_back" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/img_jt" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@drawable/icon" />
+            <ImageView android:layout_width="2.0dip" android:layout_height="fill_parent" android:src="@drawable/lin2" android:layout_toRightOf="@id/cppl5_lotteryhall_act_btn_back" android:contentDescription="@drawable/icon" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/cst_title_color" android:id="@id/tvtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cp_pl5" android:layout_centerInParent="true" />
+            <ImageButton android:id="@id/cppl5_lotteryhall_act_btn_refresh" android:background="@drawable/btn_lotterychoose_menu_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/cst_btn_menu" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@drawable/icon" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/fc3dzsanchooseact_linear_bottom" android:background="@drawable/bottom_background" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="16.0dip" android:textColor="@drawable/balltext_color_style_2" android:layout_gravity="center" android:id="@id/fc3dzsanchooseact_btn_clean" android:background="@drawable/cst_gcjl_mid_style" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_marginLeft="16.0dip" android:text="清空" />
+        <Button android:textSize="16.0dip" android:textColor="@color/red" android:layout_gravity="center" android:id="@id/fc3dzsanchooseact_btn_random" android:background="@drawable/cst_gcjl_mid_style" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_marginLeft="16.0dip" android:text="机选" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/fc3dzsanchooseact_linear_bottomUp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="@color/cst_money_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/red" android:gravity="center" android:id="@id/fc3dzsanchooseact_tv_betNum" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/cst_money_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注," />
+            <TextView android:textSize="16.0dip" android:textColor="@color/red" android:gravity="center" android:id="@id/fc3dzsanchooseact_tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/cst_money_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+        </LinearLayout>
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/fc3dzsanchooseact_btn_submit" android:background="@drawable/cst_gcjl_mid_style_2" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="10.0dip" android:text="确定" />
+    </LinearLayout>
+    <ScrollView android:id="@id/fc3dzsanchooseact_scroll_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/fc3dzsanchooseact_linear_bottom" android:layout_below="@id/cppl5_tittle_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="1800.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/btn_imageview" android:background="@drawable/cst_gsensor_trip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="vertical" android:paddingTop="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/fc3dzsanchooseact_Linear_ballZxBaiwei" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <RelativeLayout android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/text_choose_main" android:id="@id/tv_chooseball" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="至少选择2个球" />
+                    </LinearLayout>
+                    <Button android:textSize="13.0dip" android:textColor="#ffefd8d8" android:gravity="center" android:id="@id/fc3dzsanchooseact_btn_redRandom" android:background="@drawable/btn_lotterychoose_pagerandom_red_style" android:visibility="invisible" android:layout_width="70.0dip" android:layout_height="25.0dip" android:layout_marginRight="12.0dip" android:text="机选" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

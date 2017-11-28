@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageView android:layout_gravity="center" android:background="@drawable/my_lottery_top_logo" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_show_popwindow" android:background="@drawable/duoxuan_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/cp11ydj_lotteryhall_act_btn_back" android:layout_centerInParent="true">
+                <TextView android:textSize="19.0sp" android:textColor="@color/cst_color_white" android:id="@id/check_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="全部彩种" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_zhishi" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:src="@drawable/ico_jtx" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageButton android:id="@id/lotteryhall_act_btn_refresh" android:background="@drawable/btn_lotterychoose_update_style" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="31.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/cst_btn_update" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/lotteryinfoact_pbr_refresh" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <com.ui.main.acts.hemai.TitleIndicator android:id="@id/pagerindicator" android:background="@drawable/jc_spf_tab_normal_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:textColor="@color/text_color" app:textSizeNormal="@dimen/common_text_size_middle_2" app:textSizeSelected="@dimen/common_text_size_middle_2" app:footerLineHeight="1.0dip" app:footerColor="@color/tab_indicator_text_selected" app:footerTriangleHeight="4.0dip" />
+    <com.ui.main.acts.hemai.ViewPagerCompat android:id="@id/pager" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

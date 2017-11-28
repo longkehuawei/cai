@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/my_lottery_cg_record_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_orange" android:id="@id/my_lottery_zh_record_time_txt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="2012-01-05" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:background="@drawable/my_lottery_cg_record_info_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/cst_icon_ssq_82x95" />
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/my_lottery_line" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/itemHeaderLinearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_zh_record_caipiaoType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="双色球：" />
+                            <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_zh_record_caipiaoType_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="22:00" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_zh_record_buyNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="进行中" />
+                            <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_zh_record_buyNumber_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="共100注" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_zh_record_totalMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="总金额：" />
+                            <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_zh_record_totalMoney_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="¥2000.00" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_zh_record_qihao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="期号：" />
+                            <TextView android:textSize="14.0dip" android:textColor="@color/cst_color_gray" android:id="@id/my_lottery_zh_record_qihao_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="第85期" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:src="@drawable/my_lottery_cg_record_info_item_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

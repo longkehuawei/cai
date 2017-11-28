@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/option_feedback_frame_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/share_toolbarbg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageButton android:id="@id/option_userfeedback_btn_back" android:background="@drawable/btn_lotterychoose_menu_style" android:layout_width="40.0dip" android:layout_height="31.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/cst_btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/cst_title_color" android:id="@id/lotteryinfolist_agp_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/userfeedback" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <EditText android:textSize="14.0dip" android:textColor="@color/cst_color_black" android:gravity="top" android:id="@id/optionuserfeedback_edt_msg" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_margin="20.0dip" android:layout_below="@id/option_feedback_frame_title" />
+    <Button android:textSize="16.0dip" android:textColor="@drawable/white" android:id="@id/optionuserfeedback_btn_postMsg" android:background="@drawable/btn_cst_background_style" android:layout_width="130.0dip" android:layout_height="40.0dip" android:text="@string/post_userfeedback" android:layout_below="@id/optionuserfeedback_edt_msg" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/settings_act_phone_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="80.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

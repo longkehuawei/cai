@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/share_toolbarbg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageButton android:id="@id/bind_mobile_bind_btn_goBack" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="40.0dip" android:layout_height="31.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/cst_btn_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/cst_title_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改手机号" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/cst_color_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="您已经绑定了手机号码,如要修改,请输入以下信息" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/set_bg_22x28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <EditText android:textColor="@color/common_txt" android:textColorHint="@color/login_text_hint" android:id="@id/bind_mobile_bind_et_numOld" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="旧手机号码" android:scrollHorizontally="true" android:inputType="number" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" android:layout_weight="1.0">
+                        <EditText android:textColor="@color/common_txt" android:textColorHint="@color/login_text_hint" android:id="@id/bind_mobile_bind_et_numNew" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="新手机号码" android:scrollHorizontally="true" android:inputType="number" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/bind_mobile_bind_btn_submit" android:background="@drawable/btn_cst_background_style" android:layout_width="200.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="发送验证码" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

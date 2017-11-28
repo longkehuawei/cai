@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top|right|center" android:orientation="vertical" android:id="@id/shuangseqiu_dialog_menu_linear_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/cst_bg_menu_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginRight="12.0dip">
+        <Button android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/shuangseqiu_dialog_menu_btn_choose" android:background="@drawable/btn_random_plus_style" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/choose_num" android:layout_weight="1.0" />
+        <ImageView android:background="@drawable/cst_menu_dialog_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/shuangseqiu_dialog_menu_btn_hemai" android:background="@drawable/btn_random_plus_style" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/hemai" android:layout_weight="1.0" />
+        <ImageView android:background="@drawable/cst_menu_dialog_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/shuangseqiu_dialog_menu_btn_lotteryRecord" android:background="@drawable/btn_random_plus_style" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/lottery_record" android:layout_weight="1.0" />
+        <ImageView android:id="@id/shuangseqiu_dialog_menu_img_zhuihao" android:background="@drawable/cst_menu_dialog_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/shuangseqiu_dialog_menu_btn_zhuihaoRecord" android:background="@drawable/btn_random_plus_style" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="追号记录" android:layout_weight="1.0" />
+        <ImageView android:background="@drawable/cst_menu_dialog_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/shuangseqiu_dialog_menu_btn_lotteryInfo" android:background="@drawable/btn_random_plus_style" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/lottery_info" android:layout_weight="1.0" />
+        <ImageView android:background="@drawable/cst_menu_dialog_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:id="@id/shuangseqiu_dialog_menu_btn_introduction" android:background="@drawable/btn_random_plus_style" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/introduction" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/accountdetail_act_group_frame_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageButton android:id="@id/my_lottery_zhcz_act_btn_goBack" android:background="@drawable/btn_lotterychoose_back_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" android:src="@drawable/lin2" android:layout_toRightOf="@id/my_lottery_zhcz_act_btn_goBack" android:contentDescription="@drawable/icon" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="账户充值" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <ScrollView android:background="@color/yellow_slide" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/set_bg_22x28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <RelativeLayout android:id="@id/userinfo_detail_recharge_btn_zfb" android:background="@drawable/relative_set_bottom_style" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                    <ImageView android:id="@id/szx_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/member_pic3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/szx_img" android:layout_centerVertical="true">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付宝充值" />
+                        <TextView android:textSize="14.0dip" android:textColor="#ff868686" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大众选择，无手续费" />
+                    </LinearLayout>
+                    <ImageView android:background="@drawable/cst_arraw_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@drawable/cst_line_449x1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@id/userinfo_detail_recharge_btn_yb" android:background="@drawable/relative_set_bottom_style" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                    <ImageView android:id="@id/yibao_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/member_pic5" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/yibao_img" android:layout_centerVertical="true">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="智付充值" />
+                        <TextView android:textSize="14.0dip" android:textColor="#ff868686" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="绿色支付，快乐生活" />
+                    </LinearLayout>
+                    <ImageView android:background="@drawable/cst_arraw_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@drawable/cst_line_449x1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@id/userinfo_detail_recharge_btn_szf" android:background="@drawable/relative_set_bottom_style" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                    <ImageView android:id="@id/szf_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/member_pic6" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/szf_img" android:layout_centerVertical="true">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="神州付充值" />
+                        <TextView android:textSize="14.0dip" android:textColor="#ff868686" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="移动,联通,电信电话卡" />
+                    </LinearLayout>
+                    <ImageView android:background="@drawable/cst_arraw_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@drawable/cst_line_449x1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@id/userinfo_detail_recharge_btn_tv" android:background="@drawable/relative_set_bottom_style" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                    <ImageView android:id="@id/tv_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/tv_img" android:layout_centerVertical="true">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电视卡支付" />
+                        <TextView android:textSize="14.0dip" android:textColor="#ff868686" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ABC支付卡，三网支付" />
+                    </LinearLayout>
+                    <ImageView android:background="@drawable/cst_arraw_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@drawable/cst_line_449x1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@id/userinfo_detail_recharge_btn_unin" android:background="@drawable/relative_set_top_style" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                    <ImageView android:id="@id/yl_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/member_pic2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="190.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/yl_img" android:layout_centerVertical="true">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/cst_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="银行卡充值" />
+                        <TextView android:textSize="14.0dip" android:textColor="#ff868686" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支持多家银行在线支付" />
+                    </LinearLayout>
+                    <ImageView android:background="@drawable/cst_arraw_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

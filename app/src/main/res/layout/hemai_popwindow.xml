@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_main" android:background="@drawable/xuanxiang_background" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <CheckBox android:id="@id/b1" android:layout_margin="1.0dip" android:checked="true" android:text="全部彩种" style="@style/tab_left" />
+        <CheckBox android:id="@id/b2" android:layout_margin="1.0dip" android:text="十一运夺金" style="@style/tab_left" />
+        <CheckBox android:id="@id/b3" android:layout_margin="1.0dip" android:text="江西11选5" style="@style/tab_left" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <CheckBox android:id="@id/b4" android:layout_margin="1.0dip" android:text="广东11选5" style="@style/tab_left" />
+        <CheckBox android:id="@id/b5" android:layout_margin="1.0dip" android:text="重庆时时彩" style="@style/tab_left" />
+        <CheckBox android:id="@id/b6" android:layout_margin="1.0dip" android:text="印尼五分彩" style="@style/tab_left" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <CheckBox android:id="@id/b12" android:layout_margin="1.0dip" android:text="河内五分彩" style="@style/tab_left" />
+        <CheckBox android:id="@id/b8" android:layout_margin="1.0dip" android:text="福彩3D" style="@style/tab_left" />
+        <CheckBox android:id="@id/b9" android:layout_margin="1.0dip" android:text="大乐透" style="@style/tab_left" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip">
+        <CheckBox android:id="@id/b10" android:layout_margin="1.0dip" android:text="排列五" style="@style/tab_left" />
+        <CheckBox android:id="@id/b11" android:layout_margin="1.0dip" android:text="排列三" style="@style/tab_left" />
+        <CheckBox android:id="@id/b13" android:layout_margin="1.0dip" android:text="双色球" style="@style/tab_left" />
+        <CheckBox android:id="@id/b13" android:visibility="gone" android:layout_margin="1.0dip" android:text="印尼五分彩" style="@style/tab_left" />
+    </LinearLayout>
+</LinearLayout>

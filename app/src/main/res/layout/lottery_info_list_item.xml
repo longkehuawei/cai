@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rowItemLinearLayout" android:background="@drawable/btn_shouye_left_back_style" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/itemHeaderLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/lottery_info_item_qihao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/cst_lottery_name" android:id="@id/lottery_info_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="76.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/itemContentLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/lin_lotteryNumRed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="17.0dip" android:textColor="@color/red" android:id="@id/lottery_info_item_haoma_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/color_blue" android:id="@id/lottery_info_item_haoma_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="10" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/red" android:id="@id/miaoshu1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/kj_arrow" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="false" android:state_checked="false" android:drawable="@drawable/chinamobile_default_hvga" />
+    <item android:state_focused="true" android:state_checked="false" android:drawable="@drawable/chinamobile_selected_hvga" />
+    <item android:state_focused="true" android:state_checked="true" android:drawable="@drawable/chinamobile_pressed_hvga" />
+    <item android:state_focused="false" android:state_checked="true" android:drawable="@drawable/chinamobile_pressed_hvga" />
+</selector>
