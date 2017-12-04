@@ -27,9 +27,6 @@ public class LoginPresenter extends LoginContract.Presenter {
 
     @Override
     public void sign(String name, String pass) {
-        mCompositeSubscription.add(
-                ApiFactory.createUser(new _User(name, pass))
-                        .subscribe(res -> mView.signSuccess(),
-                                e -> mView.showMsg("注册失败!")));
+
     }
 }

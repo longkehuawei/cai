@@ -36,7 +36,7 @@ public class FlashActivity extends DataBindingActivity<ActivityFlashBinding> {
 
     @Bus(EventTags.JUMP_TO_MAIN)
     public void jumpToMainPage() {
-        TRouter.go(C.HOME);
+        TRouter.go(C.REGISTERT);
         finish();
     }
 }

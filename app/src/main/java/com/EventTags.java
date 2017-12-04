@@ -12,6 +12,7 @@ public interface EventTags {
     int FLASH_INIT_UI = 0x0001;
     int JUMP_TO_MAIN = 0x0002;
     int SHOW_TAB_LIST = 0x0003;
+    int ON_USER_REGIST = 0x0004;
     /**
      * 发布公开成功
      */

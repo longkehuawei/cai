@@ -10,6 +10,8 @@ import com.model.Image;
 import com.model.ImageInfo;
 import com.model.Message;
 import com.model.MessageInfo;
+import com.model.RegistResult;
+import com.model.User;
 import com.model._User;
 
 import io.reactivex.Flowable;
@@ -31,11 +33,8 @@ public interface ApiService {
     @GET("login")
     Flowable<_User> login(@Query("username") String username, @Query("password") String password);
 
-    @POST("users")
-    Flowable<CreatedResult> createUser(@Body _User user);
-
-    @GET("users")
-    Flowable<DataArr<_User>> getAllUser(@Query("skip") int skip, @Query("limit") int limit);
+    @POST("register")
+    Flowable<RegistResult> register(@Body User user);
 
     @GET("classes/Image")
     Flowable<DataArr<ImageInfo>> getAllImages(@Query("where") String where, @Query("skip") int skip, @Query("limit") int limit, @Query("order") String order);
